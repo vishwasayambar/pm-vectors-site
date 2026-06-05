@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index, follow" />
+<title>Resources & Downloads — Electrical DSR, Circulars & Technical References | PM Vectors</title>
+<meta name="description" content="Downloadable electrical engineering references — PMC NON-DSR, MERC circulars, MSEDCL load calculations, cable current ratings, BOQ templates and more. Curated by PM Vectors for engineers, contractors and procurement teams." />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      fontFamily: { display:['"Space Grotesk"','sans-serif'], sans:['"Manrope"','sans-serif'], mono:['"JetBrains Mono"','monospace'], impact:['"Bebas Neue"','sans-serif'] },
+      colors: { ink:{950:'#070A14',900:'#0B1020',800:'#111A2E',700:'#1B2540'}, steel:'#94A3B8', concrete:'#CBD5E1', rebar:'#F59E0B', live:'#FCD34D', arc:'#3B82F6', forge:'#1E3A8A' }
+    }}
+  };
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+<style>
+  html { scroll-behavior:smooth; }
+  body { font-family:'Manrope',sans-serif; background:#070A14; color:#E2E8F0; overflow-x:hidden; }
+  .font-display{font-family:'Space Grotesk',sans-serif;letter-spacing:-0.02em;}
+  .font-impact{font-family:'Bebas Neue',sans-serif;letter-spacing:0.02em;}
+  .bp-grid { background-image: linear-gradient(rgba(148,163,184,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,.08) 1px, transparent 1px); background-size: 48px 48px; }
+  .bp-grid-small { background-image: linear-gradient(rgba(148,163,184,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,.06) 1px, transparent 1px); background-size: 24px 24px; }
+  .grad-warm { background:linear-gradient(135deg,#FBBF24,#F59E0B,#FCD34D); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .grad-cool { background:linear-gradient(135deg,#60A5FA,#A5B4FC,#FFFFFF); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .sec-num { font-family:'JetBrains Mono',monospace; color:#3B82F6; font-size:0.75rem; letter-spacing:0.3em; }
+  .nav-blur { backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%);}
+  .lift { transition: all .4s cubic-bezier(.2,.8,.2,1); }
+  .lift:hover { transform: translateY(-4px); }
+  .doc-card { background: linear-gradient(180deg, rgba(17,26,46,.6), rgba(7,10,20,.95)); border: 1px solid rgba(148,163,184,.12); }
+  .doc-card:hover { border-color: rgba(245,158,11,.4); }
+  .min-tap { min-height: 44px; }
+
+  /* Filter chip */
+  .chip { transition: all .25s; }
+
+  /* File card icon glow */
+  .icon-pdf { background: linear-gradient(135deg, #DC2626, #991B1B); }
+  .icon-xlsx { background: linear-gradient(135deg, #16A34A, #14532D); }
+</style>
+</head>
+
+<body class="bg-ink-950 text-slate-200">
+
+<!-- NAV -->
+<nav id="nav" class="fixed top-0 inset-x-0 z-50 nav-blur bg-ink-950/60 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white p-1.5 flex items-center justify-center overflow-hidden">
+        <img src="assets/logo/pm-vectors-logo.jpg" alt="PM Vectors" class="w-full h-full object-contain" />
+      </div>
+      <div class="leading-none">
+        <div class="font-display font-bold text-white text-base md:text-lg tracking-tight">PM VECTORS</div>
+        <div class="text-[10px] md:text-[11px] text-steel font-mono tracking-[0.2em]">RESOURCES &amp; DOWNLOADS</div>
+      </div>
+    </a>
+
+    <!-- Desktop nav with dropdowns -->
+    <div class="hidden lg:flex items-center gap-1">
+      <a href="index.html#about" class="px-3 xl:px-4 py-2 text-sm text-slate-300 hover:text-white transition">About</a>
+      <div class="relative dropdown">
+        <button class="dropdown-toggle inline-flex items-center gap-1 px-3 xl:px-4 py-2 text-sm text-slate-300 hover:text-white transition">
+          Divisions
+          <svg class="w-3.5 h-3.5 mt-px transition-transform dropdown-chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-56 rounded-xl border border-white/10 bg-ink-900/95 backdrop-blur-xl shadow-2xl overflow-hidden opacity-0 invisible -translate-y-1 transition-all duration-200">
+          <a href="index.html#electrical" class="flex items-start gap-3 px-4 py-3 hover:bg-rebar/10"><span class="w-1.5 h-1.5 rounded-full bg-rebar mt-2"></span><span><span class="block text-white font-semibold text-sm">Electrical Services</span><span class="block text-steel text-[11px] mt-0.5">Substation · Cable · Transformer</span></span></a>
+          <a href="index.html#products" class="flex items-start gap-3 px-4 py-3 hover:bg-white/5 border-t border-white/5"><span class="w-1.5 h-1.5 rounded-full bg-concrete mt-2"></span><span><span class="block text-white font-semibold text-sm">RCC Precast</span><span class="block text-steel text-[11px] mt-0.5">Hume pipes · Markers · Covers</span></span></a>
+        </div>
+      </div>
+      <a href="index.html#projects" class="px-3 xl:px-4 py-2 text-sm text-slate-300 hover:text-white transition">Projects</a>
+      <div class="relative dropdown">
+        <button class="dropdown-toggle inline-flex items-center gap-1 px-3 xl:px-4 py-2 text-sm text-rebar font-semibold hover:text-white transition">
+          Resources
+          <svg class="w-3.5 h-3.5 mt-px transition-transform dropdown-chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-64 rounded-xl border border-white/10 bg-ink-900/95 backdrop-blur-xl shadow-2xl overflow-hidden opacity-0 invisible -translate-y-1 transition-all duration-200">
+          <a href="resources.html" class="flex items-start gap-3 px-4 py-3 bg-rebar/10"><svg class="w-4 h-4 text-rebar mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg><span><span class="block text-white font-semibold text-sm">Downloads <span class="text-rebar text-[10px] font-mono ml-1">· YOU ARE HERE</span></span><span class="block text-steel text-[11px] mt-0.5">DSR rate cards · Circulars · Technical refs</span></span></a>
+          <a href="gallery.html" class="flex items-start gap-3 px-4 py-3 hover:bg-rebar/10 border-t border-white/5"><svg class="w-4 h-4 text-rebar mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span><span class="block text-white font-semibold text-sm">Photo Gallery</span><span class="block text-steel text-[11px] mt-0.5">Site work · Substations · RCC despatch</span></span></a>
+        </div>
+      </div>
+      <a href="index.html#contact" class="px-3 xl:px-4 py-2 text-sm text-slate-300 hover:text-white transition">Contact</a>
+    </div>
+
+    <div class="flex items-center gap-2 md:gap-3">
+      <a href="tel:+917770055835" class="hidden xl:inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.4a1 1 0 01.96.72l1.2 4a1 1 0 01-.27 1l-1.65 1.5a13 13 0 006.13 6.13l1.5-1.65a1 1 0 011-.27l4 1.2a1 1 0 01.72.96V19a2 2 0 01-2 2A18 18 0 013 5z"/></svg>
+        77700 55835
+      </a>
+      <a href="index.html#contact" class="hidden sm:inline-flex min-tap px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-white text-ink-950 font-semibold text-xs md:text-sm hover:bg-rebar transition items-center gap-2">
+        Get a Quote
+        <span class="w-1.5 h-1.5 rounded-full bg-rebar"></span>
+      </a>
+      <button id="menu-btn" aria-label="Open menu" class="lg:hidden min-tap w-10 h-10 flex items-center justify-center rounded-lg border border-white/10 text-white hover:bg-white/5">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-white/10 bg-ink-950/95 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-4 py-3 space-y-0.5">
+      <a href="index.html#about" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">About</a>
+      <div class="px-3 pt-3 pb-1 text-[10px] font-mono tracking-widest text-rebar">DIVISIONS</div>
+      <a href="index.html#electrical" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">— Electrical Services</a>
+      <a href="index.html#products" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">— RCC Precast</a>
+      <a href="index.html#projects" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">Projects</a>
+      <div class="px-3 pt-3 pb-1 text-[10px] font-mono tracking-widest text-rebar">RESOURCES</div>
+      <a href="resources.html" class="block px-3 py-3 text-sm text-rebar font-semibold rounded-lg bg-rebar/10">— Downloads · YOU ARE HERE</a>
+      <a href="gallery.html" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">— Photo Gallery</a>
+      <a href="index.html#contact" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .dropdown:hover .dropdown-chevron { transform: rotate(180deg); }
+</style>
+
+<!-- HERO -->
+<section class="relative pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden">
+  <div class="absolute inset-0 bp-grid opacity-50"></div>
+  <div class="absolute -top-40 right-0 w-[500px] h-[500px] rounded-full bg-rebar/10 blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+    <div class="flex items-center gap-3 mb-5" data-aos="fade-up">
+      <a href="index.html" class="text-xs text-steel hover:text-white font-mono tracking-widest">← HOME</a>
+      <span class="text-steel">/</span>
+      <span class="text-xs text-rebar font-mono tracking-widest">RESOURCES &amp; DOWNLOADS</span>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-8" data-aos="fade-up" data-aos-delay="100">
+        <h1 class="font-display font-bold text-white text-4xl sm:text-5xl md:text-7xl tracking-tighter leading-[0.95]">
+          Electrical engineering<br/><span class="grad-warm">references &amp; rate cards.</span>
+        </h1>
+        <p class="mt-5 md:mt-6 text-base md:text-xl text-slate-300 max-w-2xl leading-relaxed">
+          A curated library of DSR rate schedules, MERC/MSEDCL circulars, technical references and estimation tools — used daily by our engineers and shared here for our partners, consultants and contractors.
+        </p>
+      </div>
+
+      <div class="lg:col-span-4 lg:pl-8" data-aos="fade-left" data-aos-delay="200">
+        <div class="rounded-2xl border border-rebar/30 bg-ink-800/40 p-5 md:p-6">
+          <div class="font-mono text-xs text-rebar tracking-widest">// LIBRARY</div>
+          <div class="mt-2 flex items-baseline gap-3">
+            <div class="font-impact text-white text-6xl md:text-7xl">14</div>
+            <div class="text-steel">documents</div>
+          </div>
+          <div class="grid grid-cols-2 gap-2 mt-4 text-xs">
+            <div class="rounded-lg bg-white/5 p-2.5">
+              <div class="text-rebar font-mono text-[10px]">13×</div>
+              <div class="text-white font-semibold">PDF</div>
+            </div>
+            <div class="rounded-lg bg-white/5 p-2.5">
+              <div class="text-emerald-400 font-mono text-[10px]">1×</div>
+              <div class="text-white font-semibold">XLSX</div>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-white/10 text-[11px] text-steel font-mono">Updated for 2024–2026 schedules</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER -->
+<section class="relative border-y border-white/5 bg-ink-900/50">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 py-5 flex flex-wrap items-center gap-2 md:gap-3">
+    <span class="text-xs text-steel font-mono tracking-widest mr-2">// FILTER</span>
+    <button class="chip filter-btn min-tap active px-4 py-2 rounded-full text-xs md:text-sm font-semibold border border-rebar bg-rebar text-ink-950" data-filter="all">All Documents</button>
+    <button class="chip filter-btn min-tap px-4 py-2 rounded-full text-xs md:text-sm font-semibold border border-white/10 bg-ink-800 text-slate-300 hover:bg-white/10" data-filter="dsr">Rate Schedules (DSR)</button>
+    <button class="chip filter-btn min-tap px-4 py-2 rounded-full text-xs md:text-sm font-semibold border border-white/10 bg-ink-800 text-slate-300 hover:bg-white/10" data-filter="circular">Circulars &amp; Notifications</button>
+    <button class="chip filter-btn min-tap px-4 py-2 rounded-full text-xs md:text-sm font-semibold border border-white/10 bg-ink-800 text-slate-300 hover:bg-white/10" data-filter="technical">Technical References</button>
+    <button class="chip filter-btn min-tap px-4 py-2 rounded-full text-xs md:text-sm font-semibold border border-white/10 bg-ink-800 text-slate-300 hover:bg-white/10" data-filter="estimation">Estimation Tools</button>
+  </div>
+</section>
+
+<!-- DOCS GRID -->
+<section class="relative py-12 md:py-20 overflow-hidden">
+  <div class="absolute inset-0 bp-grid-small opacity-40"></div>
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+
+    <!-- CATEGORY: RATE SCHEDULES -->
+    <div class="mb-12" data-aos="fade-up">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-rebar font-mono text-xs tracking-[0.3em]">CATEGORY 01</span>
+        <span class="h-px flex-1 bg-rebar/20"></span>
+        <h2 class="font-display font-bold text-white text-2xl md:text-3xl tracking-tight">Rate Schedules &amp; Cost Data</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-4 docs-grid">
+
+        <a href="assets/docs/PMC-NON-DSR-2025-2026-Electrical-Department.pdf" download class="doc-card item dsr rounded-2xl p-5 md:p-6 flex gap-4 lift group">
+          <div class="icon-pdf flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg">
+            <span class="text-white font-impact text-xl">PDF</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-rebar/15 border border-rebar/30 text-rebar text-[9px] font-bold tracking-widest">DSR · 2025–26</span>
+              <span class="text-steel text-[10px] font-mono">251 KB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">PMC NON-DSR 2025–2026 · Electrical Department</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">Pune Municipal Corporation Non-DSR rate schedule for electrical works — labour, supply, erection and BOQ rates.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-rebar font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+        <a href="assets/docs/Electrical-DSR-2023-24.pdf" download class="doc-card item dsr rounded-2xl p-5 md:p-6 flex gap-4 lift group">
+          <div class="icon-pdf flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg">
+            <span class="text-white font-impact text-xl">PDF</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-rebar/15 border border-rebar/30 text-rebar text-[9px] font-bold tracking-widest">DSR · 2023–24</span>
+              <span class="text-steel text-[10px] font-mono">4.1 MB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Electrical DSR 2023–24</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">Maharashtra State Electrical Department Schedule of Rates for FY 2023–24. Material, labour and composite item rates.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-rebar font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+        <a href="assets/docs/PWD-DSR-2018-19.pdf" download class="doc-card item dsr rounded-2xl p-5 md:p-6 flex gap-4 lift group">
+          <div class="icon-pdf flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg">
+            <span class="text-white font-impact text-xl">PDF</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-rebar/15 border border-rebar/30 text-rebar text-[9px] font-bold tracking-widest">DSR · 2018–19</span>
+              <span class="text-steel text-[10px] font-mono">2.9 MB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">PWD DSR 2018–19</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">Public Works Department District Schedule of Rates for FY 2018–19. Useful for legacy estimation and reference.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-rebar font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+        <a href="assets/docs/Final-Cost-Data-2024-25.xlsx" download class="doc-card item dsr rounded-2xl p-5 md:p-6 flex gap-4 lift group">
+          <div class="icon-xlsx flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg">
+            <span class="text-white font-impact text-base">XLSX</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-[9px] font-bold tracking-widest">SPREADSHEET</span>
+              <span class="text-steel text-[10px] font-mono">20 MB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Final Cost Data 2024–25</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">Comprehensive cost data workbook (dated 14 Oct 2024) — material, equipment and composite rates ready for BOQ generation.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-emerald-400 font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- CATEGORY: CIRCULARS -->
+    <div class="mb-12" data-aos="fade-up">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-arc font-mono text-xs tracking-[0.3em]">CATEGORY 02</span>
+        <span class="h-px flex-1 bg-arc/20"></span>
+        <h2 class="font-display font-bold text-white text-2xl md:text-3xl tracking-tight">Circulars &amp; Notifications</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 docs-grid">
+
+        <a href="assets/docs/Commercial-Circular-341-MERC-Order-2023.pdf" download class="doc-card item circular rounded-2xl p-5 md:p-6 flex gap-4 lift group">
+          <div class="icon-pdf flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-impact text-xl">PDF</span></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-arc/15 border border-arc/30 text-arc text-[9px] font-bold tracking-widest">MERC · CIRCULAR 341</span>
+              <span class="text-steel text-[10px] font-mono">3.6 MB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Commercial Circular 341 · MERC Order Case 226 of 2022</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">MERC tariff order issued 28 April 2023. Reference for commercial tariff revisions affecting consumer categories across Maharashtra.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-arc font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+        <a href="assets/docs/Metering-Cubical-Earthing-Circular.pdf" download class="doc-card item circular rounded-2xl p-5 md:p-6 flex gap-4 lift group">
+          <div class="icon-pdf flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-impact text-xl">PDF</span></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-arc/15 border border-arc/30 text-arc text-[9px] font-bold tracking-widest">EARTHING</span>
+              <span class="text-steel text-[10px] font-mono">545 KB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Metering Cubicle Earthing Circular</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">Discom circular on earthing requirements for metering cubicles. Mandatory reference for HT/LT consumer installations.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-arc font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+        <a href="assets/docs/Centages-Circular-2022-23.pdf" download class="doc-card item circular rounded-2xl p-5 md:p-6 flex gap-4 lift group">
+          <div class="icon-pdf flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-impact text-xl">PDF</span></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-arc/15 border border-arc/30 text-arc text-[9px] font-bold tracking-widest">CENTAGES · 2022–23</span>
+              <span class="text-steel text-[10px] font-mono">1.0 MB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Centages Circular 2022–23</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">Government circular on supervision and centage percentages for departmental works during FY 2022–23.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-arc font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+        <a href="assets/docs/Circular-Loading-Centages-DDF-DPDC-Scheme-2023.pdf" download class="doc-card item circular rounded-2xl p-5 md:p-6 flex gap-4 lift group">
+          <div class="icon-pdf flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-impact text-xl">PDF</span></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-arc/15 border border-arc/30 text-arc text-[9px] font-bold tracking-widest">DDF · DPDC</span>
+              <span class="text-steel text-[10px] font-mono">3.1 MB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Loading of Centages for DDF / DPDC Scheme</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">Circular No. 3905 dated 13 Feb 2023 — guidelines on loading centages for District Development Fund and DPDC scheme works.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-arc font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+        <a href="assets/docs/Waiver-1.3-Percent-Supervision-Charges-MIDC.pdf" download class="doc-card item circular rounded-2xl p-5 md:p-6 flex gap-4 lift group md:col-span-2">
+          <div class="icon-pdf flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-impact text-xl">PDF</span></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-arc/15 border border-arc/30 text-arc text-[9px] font-bold tracking-widest">MIDC · WAIVER</span>
+              <span class="text-steel text-[10px] font-mono">1.2 MB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Waiver of 1.3% Supervision Charges for MIDC</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">Notification waiving 1.3% supervision charges on electrical works executed within MIDC areas — important for MIDC project costing.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-arc font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- CATEGORY: TECHNICAL REFERENCES -->
+    <div class="mb-12" data-aos="fade-up">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-emerald-400 font-mono text-xs tracking-[0.3em]">CATEGORY 03</span>
+        <span class="h-px flex-1 bg-emerald-400/20"></span>
+        <h2 class="font-display font-bold text-white text-2xl md:text-3xl tracking-tight">Technical References</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-4 docs-grid">
+
+        <a href="assets/docs/Load-Calculation-MSEDCL.pdf" download class="doc-card item technical rounded-2xl p-5 md:p-6 flex flex-col gap-3 lift group">
+          <div class="icon-pdf w-14 h-14 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-impact text-xl">PDF</span></div>
+          <div>
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-[9px] font-bold tracking-widest">MSEDCL</span>
+              <span class="text-steel text-[10px] font-mono">7.1 MB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Load Calculation · MSEDCL</h3>
+            <p class="text-steel text-xs mt-1.5">MSEDCL approved load calculation methodology and worksheets for HT/LT consumers and industrial connections.</p>
+          </div>
+          <div class="mt-auto inline-flex items-center gap-1.5 text-emerald-400 font-semibold text-sm group-hover:gap-2.5 transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+            Download
+          </div>
+        </a>
+
+        <a href="assets/docs/Test-Report-A1-Form.pdf" download class="doc-card item technical rounded-2xl p-5 md:p-6 flex flex-col gap-3 lift group">
+          <div class="icon-pdf w-14 h-14 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-impact text-xl">PDF</span></div>
+          <div>
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-[9px] font-bold tracking-widest">A1 · TEST</span>
+              <span class="text-steel text-[10px] font-mono">439 KB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Test Report · A1 Form</h3>
+            <p class="text-steel text-xs mt-1.5">Standard A1 form for electrical installation test reports — required for statutory submission and approval.</p>
+          </div>
+          <div class="mt-auto inline-flex items-center gap-1.5 text-emerald-400 font-semibold text-sm group-hover:gap-2.5 transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+            Download
+          </div>
+        </a>
+
+        <a href="assets/docs/Cable-Current-Ratings.pdf" download class="doc-card item technical rounded-2xl p-5 md:p-6 flex flex-col gap-3 lift group">
+          <div class="icon-pdf w-14 h-14 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-impact text-xl">PDF</span></div>
+          <div>
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-[9px] font-bold tracking-widest">CABLE · AMPACITY</span>
+              <span class="text-steel text-[10px] font-mono">555 KB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Cable Current Ratings</h3>
+            <p class="text-steel text-xs mt-1.5">Ampacity reference tables for HT and LT cables — copper and aluminium conductors, various insulation grades.</p>
+          </div>
+          <div class="mt-auto inline-flex items-center gap-1.5 text-emerald-400 font-semibold text-sm group-hover:gap-2.5 transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+            Download
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- CATEGORY: ESTIMATION TOOLS -->
+    <div class="mb-12" data-aos="fade-up">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-rebar font-mono text-xs tracking-[0.3em]">CATEGORY 04</span>
+        <span class="h-px flex-1 bg-rebar/20"></span>
+        <h2 class="font-display font-bold text-white text-2xl md:text-3xl tracking-tight">Estimation &amp; Tendering</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 docs-grid">
+
+        <a href="assets/docs/Bill-of-Quantity.pdf" download class="doc-card item estimation rounded-2xl p-5 md:p-6 flex gap-4 lift group">
+          <div class="icon-pdf flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-impact text-xl">PDF</span></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-rebar/15 border border-rebar/30 text-rebar text-[9px] font-bold tracking-widest">BOQ · TEMPLATE</span>
+              <span class="text-steel text-[10px] font-mono">2.2 MB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Bill of Quantity Template</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">Standardised BOQ format used for electrical project tendering — itemised, structured for govt and corporate submissions.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-rebar font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+        <a href="assets/docs/Security-Deposit-Estimation.pdf" download class="doc-card item estimation rounded-2xl p-5 md:p-6 flex gap-4 lift group">
+          <div class="icon-pdf flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center shadow-lg"><span class="text-white font-impact text-xl">PDF</span></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="px-2 py-0.5 rounded-full bg-rebar/15 border border-rebar/30 text-rebar text-[9px] font-bold tracking-widest">DEPOSIT · CALC</span>
+              <span class="text-steel text-[10px] font-mono">531 KB</span>
+            </div>
+            <h3 class="text-white font-display font-bold text-base md:text-lg leading-snug">Security Deposit Estimation</h3>
+            <p class="text-steel text-xs md:text-sm mt-1.5">Calculation worksheet for security deposit estimation against new electricity connections / sanctioned loads.</p>
+            <div class="mt-3 inline-flex items-center gap-1.5 text-rebar font-semibold text-sm group-hover:gap-2.5 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+              Download
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- No-results -->
+    <div id="no-results" class="hidden text-center py-16">
+      <div class="text-steel font-mono text-xs tracking-widest mb-3">// NOTHING HERE</div>
+      <div class="text-white font-display text-2xl">No documents in this category yet.</div>
+    </div>
+
+    <!-- Help strip -->
+    <div class="mt-12 rounded-2xl border border-white/10 bg-gradient-to-r from-rebar/10 via-rebar/5 to-transparent p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-5" data-aos="fade-up">
+      <div>
+        <div class="text-rebar font-mono text-xs tracking-widest mb-2">// NEED SOMETHING SPECIFIC?</div>
+        <div class="text-white font-display text-xl md:text-2xl font-bold">Looking for a different DSR, circular or technical reference?</div>
+        <p class="text-steel mt-1 text-sm md:text-base">Our estimation team can usually share the right document or work it into your BOQ directly.</p>
+      </div>
+      <a href="https://wa.me/917770055835?text=Hi%2C%20I%27m%20looking%20for%20a%20specific%20document%20on%20your%20Resources%20page" class="min-tap inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-rebar text-ink-950 font-bold text-sm hover:bg-yellow-400 transition whitespace-nowrap">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.74.46 3.41 1.32 4.9L2 22l5.31-1.39a9.9 9.9 0 004.73 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0012.04 2z"/></svg>
+        Ask on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="relative bg-ink-950 border-t border-white/5 pt-10 pb-8 overflow-hidden">
+  <div class="absolute inset-0 bp-grid-small opacity-30"></div>
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-white p-1.5 flex items-center justify-center overflow-hidden">
+        <img src="assets/logo/pm-vectors-logo.jpg" alt="PM Vectors" class="w-full h-full object-contain" />
+      </div>
+      <div>
+        <div class="font-display font-bold text-white text-base tracking-tight">PM VECTORS</div>
+        <div class="text-[10px] text-steel font-mono tracking-[0.2em]">PUNE · MAHARASHTRA</div>
+      </div>
+    </div>
+    <div class="text-xs text-steel text-center md:text-right">
+      © 2026 PM Vectors. All rights reserved. | Website by <a href="#" class="text-arc hover:text-white">BytePhase Web Services</a><br/>
+      <span class="font-mono">contact@pmvectors.com · +91 77700 55835</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, once: true, offset: 60, easing: 'ease-out-cubic' });
+
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  // Filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.docs-grid .item');
+  const noResults = document.getElementById('no-results');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('active','bg-rebar','text-ink-950','border-rebar');
+        b.classList.add('bg-ink-800','text-slate-300','border-white/10');
+      });
+      btn.classList.add('active','bg-rebar','text-ink-950','border-rebar');
+      btn.classList.remove('bg-ink-800','text-slate-300','border-white/10');
+      const f = btn.dataset.filter;
+      let visible = 0;
+      items.forEach(item => {
+        if (f === 'all' || item.classList.contains(f)) {
+          item.style.display = '';
+          visible++;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+      noResults.classList.toggle('hidden', visible > 0);
+    });
+  });
+</script>
+
+</body>
+</html>
