@@ -1,0 +1,134 @@
+{
+  "_instructions": "Edit this file to add or remove photos. Each entry needs file (filename in assets/photos/), caption, category (electrical | rcc), and optional location.",
+  "photos": [
+
+    {
+      "file": "ht-feeder-pillar-erection.jpg",
+      "caption": "HT Feeder Pillar Erection",
+      "location": "Baramati, Pune Dist.",
+      "category": "electrical"
+    },
+    {
+      "file": "transformer-dp-structure.jpg",
+      "caption": "Transformer DP Structure",
+      "location": "Substation Yard",
+      "category": "electrical"
+    },
+    {
+      "file": "twin-crane-transformer-operation.jpg",
+      "caption": "Twin-Crane Transformer Operation",
+      "location": "Substation Yard",
+      "category": "electrical"
+    },
+    {
+      "file": "transformer-installation-escorts.jpg",
+      "caption": "Power Transformer Installation",
+      "location": "Substation Site",
+      "category": "electrical"
+    },
+    {
+      "file": "cable-spool-mobilisation.jpg",
+      "caption": "HT Cable Spool Mobilisation",
+      "location": "Site Logistics",
+      "category": "electrical"
+    },
+    {
+      "file": "ht-cable-laying-with-half-round-pipes.jpg",
+      "caption": "HT Cable Laying with Half-Round Pipes",
+      "location": "Industrial Site, Maharashtra",
+      "category": "electrical"
+    },
+    {
+      "file": "ht-cable-trenching-rcc-pipes.jpg",
+      "caption": "HT Cable Trenching with RCC Pipe Conduit",
+      "location": "Industrial Estate",
+      "category": "electrical"
+    },
+    {
+      "file": "tata-hitachi-excavator-site-prep.jpg",
+      "caption": "Site Preparation & Earthwork",
+      "location": "Project Site",
+      "category": "electrical"
+    },
+    {
+      "file": "mngl-gas-pipeline-route-marker.jpg",
+      "caption": "MNGL Gas Pipeline Route Marker",
+      "location": "Despatch Yard",
+      "category": "rcc"
+    },
+
+    {
+      "file": "half-round-pipes-yard.jpg",
+      "caption": "RCC Half-Round Pipes — Curing Yard",
+      "location": "Waki Plant, Baramati",
+      "category": "rcc"
+    },
+    {
+      "file": "half-round-pipes-despatch.jpg",
+      "caption": "RCC Half-Round Pipes",
+      "location": "Despatch Yard",
+      "category": "rcc"
+    },
+    {
+      "file": "hume-pipes-stack-pmv.jpg",
+      "caption": "RCC Hume Pipes in Stock",
+      "location": "Waki Plant",
+      "category": "rcc"
+    },
+    {
+      "file": "rcc-trench-covers-rows.jpg",
+      "caption": "RCC Trench Covers — Production Lot",
+      "location": "Waki Plant",
+      "category": "rcc"
+    },
+    {
+      "file": "mngl-gas-route-markers-yellow.jpg",
+      "caption": "MNGL Gas Pipeline Route Markers",
+      "location": "Despatch Yard",
+      "category": "rcc"
+    },
+    {
+      "file": "rcc-full-round-hume-pipes.jpg",
+      "caption": "RCC Full-Round Hume Pipes",
+      "location": "Despatch Yard",
+      "category": "rcc"
+    },
+    {
+      "file": "ht-cable-route-markers.jpg",
+      "caption": "HT Cable Route Markers",
+      "location": "Waki Plant",
+      "category": "rcc"
+    },
+    {
+      "file": "earthing-pit-installation.jpg",
+      "caption": "Earthing Pit with Copper Strip",
+      "location": "Site Installation",
+      "category": "electrical"
+    },
+    {
+      "file": "rcc-compound-wall.jpg",
+      "caption": "RCC Precast Compound Wall",
+      "location": "Site Installation",
+      "category": "rcc"
+    },
+    {
+      "file": "road-divider-kerb.jpg",
+      "caption": "Road Divider &amp; Kerb Stones",
+      "location": "Highway Project",
+      "category": "rcc"
+    },
+    {
+      "file": "cement-poles-yard.jpg",
+      "caption": "Cement Poles — Stock Yard",
+      "location": "Waki Plant, Baramati",
+      "category": "rcc"
+    },
+    {
+      "file": "lt-panel-mcc-pcc.jpg",
+      "caption": "LT Panel · MCC / PCC Assembly",
+      "location": "Panel Workshop",
+      "category": "electrical"
+    }
+
+  ]
+}
