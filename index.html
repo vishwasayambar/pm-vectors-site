@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index, follow" />
+<title>PM Vectors — Electrical Contractors & Engineering Services | Pune</title>
+<meta name="description" content="PM Vectors is a Pune-based licensed electrical contractor delivering turnkey substation erection, HT/LT cable laying, transformer installation and engineering services up to 10 MVA — backed by our in-house RCC precast manufacturing division. Trusted by government, corporate and private contractors across Maharashtra." />
+<meta name="keywords" content="electrical contractor Pune, substation erection, 10 MVA contractor, HT LT cable laying, transformer installation Maharashtra, MIDC electrical contractor, RCC pipes Pune, hume pipes manufacturer, precast concrete products, Baramati electrical engineering" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="PM Vectors — Powered Connections. Strong Foundations." />
+<meta property="og:description" content="Licensed electrical contracting & engineering services up to 10 MVA — supported by our own RCC precast manufacturing. Two divisions, one promise. Pune · Maharashtra." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://pmvectors.com" />
+<meta property="og:image" content="https://bytephase-admin-prod.s3.ap-south-1.amazonaws.com/bytesites/logos/1780686829_1001185751.jpg.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['"Space Grotesk"', 'sans-serif'],
+          sans: ['"Manrope"', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+          impact: ['"Bebas Neue"', 'sans-serif']
+        },
+        colors: {
+          ink: { 950:'#070A14', 900:'#0B1020', 800:'#111A2E', 700:'#1B2540' },
+          steel: '#94A3B8',
+          concrete: '#CBD5E1',
+          rebar: '#F59E0B',
+          live: '#FCD34D',
+          arc: '#3B82F6',
+          forge: '#1E3A8A'
+        }
+      }
+    }
+  };
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<style>
+  :root { --grid:rgba(148,163,184,.08); }
+  html { scroll-behavior:smooth; }
+  body {
+    font-family:'Manrope',sans-serif;
+    background:#070A14;
+    color:#E2E8F0;
+    overflow-x:hidden;
+  }
+  .font-display{font-family:'Space Grotesk',sans-serif;letter-spacing:-0.02em;}
+  .font-impact{font-family:'Bebas Neue',sans-serif;letter-spacing:0.02em;}
+
+  /* Engineering grid background */
+  .bp-grid {
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .bp-grid-small {
+    background-image:
+      linear-gradient(rgba(148,163,184,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148,163,184,.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Concrete texture overlay */
+  .concrete-tex {
+    background:
+      radial-gradient(circle at 20% 30%, rgba(148,163,184,.06), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(59,130,246,.06), transparent 40%),
+      #0B1020;
+  }
+
+  /* Gradient text */
+  .grad-cool { background:linear-gradient(135deg,#60A5FA,#A5B4FC,#FFFFFF); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .grad-warm { background:linear-gradient(135deg,#FBBF24,#F59E0B,#FCD34D); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .grad-steel { background:linear-gradient(135deg,#FFFFFF, #CBD5E1, #94A3B8); -webkit-background-clip:text; background-clip:text; color:transparent;}
+
+  /* Animated marquee */
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .marquee-track { animation: marquee 40s linear infinite; }
+
+  /* Glow */
+  .glow-blue { box-shadow: 0 0 50px rgba(59,130,246,.25), 0 0 100px rgba(59,130,246,.1); }
+  .glow-amber { box-shadow: 0 0 50px rgba(245,158,11,.25), 0 0 100px rgba(245,158,11,.1); }
+
+  /* Card hover lift */
+  .lift { transition: all .4s cubic-bezier(.2,.8,.2,1); }
+  .lift:hover { transform: translateY(-6px); }
+
+  /* Hero blueprint lines */
+  @keyframes scan {
+    0% { transform: translateY(-100%); opacity:0; }
+    20% { opacity:.6; }
+    80% { opacity:.6; }
+    100% { transform: translateY(100vh); opacity:0; }
+  }
+  .scan-line {
+    position:absolute; left:0; right:0; height:2px;
+    background:linear-gradient(90deg,transparent,rgba(96,165,250,.6),transparent);
+    animation: scan 8s linear infinite;
+  }
+
+  /* Pulse dot */
+  @keyframes pulse-ring {
+    0% { transform: scale(.7); opacity:1; }
+    100% { transform: scale(2.4); opacity:0; }
+  }
+  .pulse-dot::after {
+    content:''; position:absolute; inset:-6px; border-radius:9999px;
+    border:2px solid currentColor; animation: pulse-ring 2s cubic-bezier(0,0,.2,1) infinite;
+  }
+
+  /* Section number */
+  .sec-num { font-family:'JetBrains Mono',monospace; color:#3B82F6; font-size:0.75rem; letter-spacing:0.3em; }
+
+  /* Product card cement texture */
+  .product-card {
+    background: linear-gradient(180deg, rgba(17,26,46,.6), rgba(7,10,20,.95));
+    border: 1px solid rgba(148,163,184,.12);
+  }
+  .product-card:hover {
+    border-color: rgba(96,165,250,.4);
+    background: linear-gradient(180deg, rgba(17,26,46,.85), rgba(11,16,32,.95));
+  }
+  .product-card.electrical:hover {
+    border-color: rgba(251,191,36,.5);
+  }
+
+  /* Diagonal divider */
+  .diag-divide {
+    background: linear-gradient(135deg, transparent 49.6%, rgba(96,165,250,.3) 49.7%, rgba(96,165,250,.3) 50.3%, transparent 50.4%);
+  }
+
+  /* Form field */
+  .field {
+    background: rgba(17,26,46,.6);
+    border: 1px solid rgba(148,163,184,.15);
+    color: #fff;
+    transition: all .25s;
+  }
+  .field:focus {
+    outline:none; border-color:#3B82F6;
+    box-shadow: 0 0 0 4px rgba(59,130,246,.15);
+    background: rgba(17,26,46,.9);
+  }
+
+  /* WhatsApp widget */
+  .wa-widget-chat {
+    transform: translateY(20px) scale(.95);
+    opacity:0; pointer-events:none;
+    transition: all .35s cubic-bezier(.2,.8,.2,1);
+  }
+  .wa-widget-chat.open {
+    transform: translateY(0) scale(1);
+    opacity:1; pointer-events:auto;
+  }
+
+  /* Marker pin breathing */
+  @keyframes breath {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+  .breath { animation: breath 3s ease-in-out infinite; }
+
+  /* Photo treatments */
+  .photo-frame {
+    position:relative; overflow:hidden;
+    border-radius:14px;
+    border:1px solid rgba(148,163,184,.15);
+  }
+  .photo-frame img { transition: transform .8s cubic-bezier(.2,.8,.2,1); }
+  .photo-frame:hover img { transform: scale(1.06); }
+  .photo-frame::after {
+    content:''; position:absolute; inset:0;
+    background: linear-gradient(180deg, transparent 40%, rgba(7,10,20,.85));
+    pointer-events:none;
+  }
+
+  /* Division accent strips */
+  .accent-rcc { background: linear-gradient(90deg, #94A3B8, #CBD5E1, #94A3B8); }
+  .accent-elec { background: linear-gradient(90deg, #F59E0B, #FCD34D, #F59E0B); }
+
+  /* Nav blur */
+  .nav-blur { backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%);}
+
+  /* Subtle noise */
+  .noise::before {
+    content:''; position:absolute; inset:0; pointer-events:none; opacity:.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Tab system */
+  .div-tab { transition: all .3s; position:relative; }
+  .div-tab.active::after {
+    content:''; position:absolute; left:0; right:0; bottom:-2px; height:2px;
+    background: currentColor;
+  }
+
+  /* Big stat */
+  .big-num { font-family:'Bebas Neue',sans-serif; font-size: clamp(3rem, 9vw, 8rem); line-height:.9; }
+
+  /* Mobile tap targets */
+  @media (max-width: 640px) {
+    .min-tap { min-height: 44px; }
+  }
+</style>
+</head>
+
+<body class="bg-ink-950 text-slate-200 pb-20 md:pb-0">
+
+<!-- ==================== NAV ==================== -->
+<nav id="nav" class="fixed top-0 inset-x-0 z-50 nav-blur bg-ink-950/60 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <div class="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-white p-1.5 flex items-center justify-center overflow-hidden">
+        <img src="assets/logo/pm-vectors-logo.jpg" alt="PM Vectors" class="w-full h-full object-contain" />
+      </div>
+      <div class="leading-none">
+        <div class="font-display font-bold text-white text-base md:text-lg tracking-tight">PM VECTORS</div>
+        <div class="text-[10px] md:text-[11px] text-steel font-mono tracking-[0.2em]">PUNE · EST. 2019</div>
+      </div>
+    </a>
+
+    <!-- Desktop nav with dropdowns -->
+    <div class="hidden lg:flex items-center gap-1">
+      <a href="#about" class="px-3 xl:px-4 py-2 text-sm text-slate-300 hover:text-white transition">About</a>
+
+      <!-- Divisions dropdown -->
+      <div class="relative dropdown">
+        <button class="dropdown-toggle inline-flex items-center gap-1 px-3 xl:px-4 py-2 text-sm text-slate-300 hover:text-white transition">
+          Divisions
+          <svg class="w-3.5 h-3.5 mt-px transition-transform dropdown-chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-56 rounded-xl border border-white/10 bg-ink-900/95 backdrop-blur-xl shadow-2xl overflow-hidden opacity-0 invisible -translate-y-1 transition-all duration-200">
+          <a href="#electrical" class="flex items-start gap-3 px-4 py-3 hover:bg-rebar/10 group">
+            <span class="w-1.5 h-1.5 rounded-full bg-rebar mt-2"></span>
+            <span>
+              <span class="block text-white font-semibold text-sm">Electrical Services</span>
+              <span class="block text-steel text-[11px] mt-0.5">Substation · Cable · Transformer</span>
+            </span>
+          </a>
+          <a href="#products" class="flex items-start gap-3 px-4 py-3 hover:bg-white/5 group border-t border-white/5">
+            <span class="w-1.5 h-1.5 rounded-full bg-concrete mt-2"></span>
+            <span>
+              <span class="block text-white font-semibold text-sm">RCC Precast</span>
+              <span class="block text-steel text-[11px] mt-0.5">Hume pipes · Markers · Covers</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <a href="#projects" class="px-3 xl:px-4 py-2 text-sm text-slate-300 hover:text-white transition">Projects</a>
+
+      <!-- Resources dropdown -->
+      <div class="relative dropdown">
+        <button class="dropdown-toggle inline-flex items-center gap-1 px-3 xl:px-4 py-2 text-sm text-slate-300 hover:text-white transition">
+          Resources
+          <svg class="w-3.5 h-3.5 mt-px transition-transform dropdown-chevron" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="dropdown-menu absolute top-full left-0 mt-2 w-64 rounded-xl border border-white/10 bg-ink-900/95 backdrop-blur-xl shadow-2xl overflow-hidden opacity-0 invisible -translate-y-1 transition-all duration-200">
+          <a href="resources.html" class="flex items-start gap-3 px-4 py-3 hover:bg-rebar/10 group">
+            <svg class="w-4 h-4 text-rebar mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span>
+              <span class="block text-white font-semibold text-sm">Downloads</span>
+              <span class="block text-steel text-[11px] mt-0.5">DSR rate cards · Circulars · Technical refs</span>
+            </span>
+          </a>
+          <a href="gallery.html" class="flex items-start gap-3 px-4 py-3 hover:bg-rebar/10 group border-t border-white/5">
+            <svg class="w-4 h-4 text-rebar mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span>
+              <span class="block text-white font-semibold text-sm">Photo Gallery</span>
+              <span class="block text-steel text-[11px] mt-0.5">Site work · Substations · RCC despatch</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <a href="#contact" class="px-3 xl:px-4 py-2 text-sm text-slate-300 hover:text-white transition">Contact</a>
+    </div>
+
+    <div class="flex items-center gap-2 md:gap-3">
+      <a href="tel:+917770055835" class="hidden xl:inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.4a1 1 0 01.96.72l1.2 4a1 1 0 01-.27 1l-1.65 1.5a13 13 0 006.13 6.13l1.5-1.65a1 1 0 011-.27l4 1.2a1 1 0 01.72.96V19a2 2 0 01-2 2A18 18 0 013 5z"/></svg>
+        77700 55835
+      </a>
+      <a href="#contact" class="hidden sm:inline-flex min-tap px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-white text-ink-950 font-semibold text-xs md:text-sm hover:bg-rebar hover:text-ink-950 transition items-center gap-2">
+        Get a Quote
+        <span class="w-1.5 h-1.5 rounded-full bg-rebar"></span>
+      </a>
+
+      <!-- Mobile hamburger -->
+      <button id="menu-btn" aria-label="Open menu" class="lg:hidden min-tap w-10 h-10 flex items-center justify-center rounded-lg border border-white/10 text-white hover:bg-white/5 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile dropdown menu -->
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-white/10 bg-ink-950/95 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-4 py-3 space-y-0.5">
+      <a href="#about" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">About</a>
+      <div class="px-3 pt-3 pb-1 text-[10px] font-mono tracking-widest text-rebar">DIVISIONS</div>
+      <a href="#electrical" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">— Electrical Services</a>
+      <a href="#products" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">— RCC Precast</a>
+      <a href="#projects" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">Projects</a>
+      <div class="px-3 pt-3 pb-1 text-[10px] font-mono tracking-widest text-rebar">RESOURCES</div>
+      <a href="resources.html" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">— Downloads</a>
+      <a href="gallery.html" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">— Photo Gallery</a>
+      <a href="#contact" class="block px-3 py-3 text-sm text-slate-200 rounded-lg hover:bg-white/5">Contact</a>
+      <div class="pt-2 border-t border-white/10 mt-2 flex gap-2">
+        <a href="tel:+917770055835" class="flex-1 min-tap px-3 py-2.5 rounded-lg bg-white/5 text-white text-xs font-semibold text-center">Call</a>
+        <a href="https://wa.me/917770055835" class="flex-1 min-tap px-3 py-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs font-semibold text-center">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* Dropdown */
+  .dropdown:hover .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .dropdown:hover .dropdown-chevron { transform: rotate(180deg); }
+</style>
+
+<!-- ==================== HERO ==================== -->
+<section id="top" class="relative min-h-screen pt-16 md:pt-20 concrete-tex noise overflow-hidden">
+  <!-- Background grid -->
+  <div class="absolute inset-0 bp-grid opacity-60"></div>
+  <!-- Scan line -->
+  <div class="scan-line"></div>
+  <!-- Radial highlights -->
+  <div class="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-arc/10 blur-3xl"></div>
+  <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-rebar/10 blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8 pt-12 md:pt-20 pb-20">
+
+    <!-- Top tag -->
+    <div class="flex items-center gap-3 mb-6 md:mb-8" data-aos="fade-up">
+      <span class="relative inline-block w-2 h-2 rounded-full bg-emerald-400 pulse-dot text-emerald-400"></span>
+      <span class="text-xs md:text-sm font-mono tracking-[0.25em] text-steel uppercase">Active · Electrical Contracting & Engineering · Maharashtra</span>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-10 items-end">
+      <div class="lg:col-span-8" data-aos="fade-up" data-aos-delay="100">
+        <h1 class="font-display font-bold text-white leading-[0.95] tracking-tighter">
+          <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem]">Powered</span>
+          <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] grad-warm">Connections.</span>
+          <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] mt-1">Strong</span>
+          <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] grad-steel">Foundations.</span>
+        </h1>
+
+        <p class="mt-6 md:mt-8 text-base md:text-xl text-slate-300 max-w-2xl leading-relaxed">
+          PM Vectors is a Pune-based <span class="text-white font-semibold">licensed electrical contractor</span> delivering turnkey substation erection, HT/LT cable laying and transformer installation up to <span class="text-white font-semibold">10 MVA</span> — backed by our own <span class="text-white font-semibold">RCC precast manufacturing</span> division at Waki, Baramati.
+        </p>
+
+        <!-- CTAs side-by-side, smaller on mobile -->
+        <div class="flex flex-row gap-3 mt-7 md:mt-10">
+          <a href="#contact" class="min-tap flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-5 py-3 md:px-7 md:py-4 rounded-full bg-white text-ink-950 font-bold text-sm md:text-base hover:bg-rebar transition shadow-xl">
+            Request a Quote
+            <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+          <a href="https://wa.me/917770055835?text=Hi%20PM%20Vectors%2C%20I%27d%20like%20a%20quote%20for%20" class="min-tap flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-5 py-3 md:px-7 md:py-4 rounded-full border border-white/20 text-white font-semibold text-sm md:text-base hover:bg-white/5 transition">
+            <svg class="w-4 h-4 md:w-5 md:h-5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.74.46 3.41 1.32 4.9L2 22l5.31-1.39a9.9 9.9 0 004.73 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0012.04 2zm0 1.65c2.21 0 4.29.86 5.85 2.42a8.21 8.21 0 012.42 5.84c0 4.55-3.71 8.26-8.27 8.26a8.23 8.23 0 01-4.21-1.15l-.3-.18-3.13.82.83-3.06-.2-.31a8.18 8.18 0 01-1.27-4.38c.01-4.55 3.72-8.26 8.28-8.26z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Right side – key spec card -->
+      <div class="lg:col-span-4 lg:pl-8" data-aos="fade-left" data-aos-delay="300">
+        <div class="rounded-2xl border border-rebar/30 bg-ink-800/40 backdrop-blur-sm p-5 md:p-6 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-rebar/15 rounded-full blur-2xl"></div>
+          <div class="relative">
+            <div class="sec-num mb-3" style="color:#FBBF24">// LICENSED CAPACITY</div>
+            <div class="flex items-baseline gap-2">
+              <div class="font-impact text-5xl md:text-6xl text-white">10</div>
+              <div class="font-display text-rebar font-bold text-2xl md:text-3xl">MVA</div>
+            </div>
+            <div class="text-xs text-steel mt-1">Transformer capacity handled</div>
+            <div class="grid grid-cols-2 gap-3 mt-5">
+              <div class="rounded-lg bg-white/5 p-3">
+                <div class="text-[10px] text-steel font-mono">CLASS</div>
+                <div class="text-white font-bold text-base">Licensed Contractor</div>
+              </div>
+              <div class="rounded-lg bg-white/5 p-3">
+                <div class="text-[10px] text-steel font-mono">SCOPE</div>
+                <div class="text-white font-bold text-base">HT / LT · Turnkey</div>
+              </div>
+            </div>
+            <div class="mt-5 pt-4 border-t border-white/10 flex items-center justify-between">
+              <span class="text-xs text-steel">Statutory approvals handled</span>
+              <span class="text-rebar font-mono text-xs">✓ APPROVED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero bottom strip -->
+    <div class="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+      <div class="bg-ink-900 p-5 md:p-7">
+        <div class="text-[10px] text-arc font-mono tracking-widest">01 / EXPERIENCE</div>
+        <div class="font-impact text-4xl md:text-5xl text-white mt-2"><span class="counter" data-target="7">0</span>+</div>
+        <div class="text-xs md:text-sm text-steel mt-1">Years in operation</div>
+      </div>
+      <div class="bg-ink-900 p-5 md:p-7">
+        <div class="text-[10px] text-rebar font-mono tracking-widest">02 / SUBSTATIONS</div>
+        <div class="font-impact text-4xl md:text-5xl text-white mt-2"><span class="counter" data-target="120">0</span>+</div>
+        <div class="text-xs md:text-sm text-steel mt-1">Erected & commissioned</div>
+      </div>
+      <div class="bg-ink-900 p-5 md:p-7">
+        <div class="text-[10px] text-arc font-mono tracking-widest">03 / DELIVERED</div>
+        <div class="font-impact text-4xl md:text-5xl text-white mt-2"><span class="counter" data-target="450">0</span>+</div>
+        <div class="text-xs md:text-sm text-steel mt-1">Projects executed</div>
+      </div>
+      <div class="bg-ink-900 p-5 md:p-7">
+        <div class="text-[10px] text-rebar font-mono tracking-widest">04 / CLIENTS</div>
+        <div class="font-impact text-4xl md:text-5xl text-white mt-2"><span class="counter" data-target="80">0</span>+</div>
+        <div class="text-xs md:text-sm text-steel mt-1">Govt · Corporate · Private</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MARQUEE / TRUST ==================== -->
+<section class="relative bg-ink-900 border-y border-white/5 overflow-hidden py-5 md:py-6">
+  <div class="flex marquee-track whitespace-nowrap">
+    <div class="flex items-center gap-12 px-6 text-steel font-display text-lg md:text-2xl tracking-tight">
+      <span>Substation Erection</span><span class="text-rebar">/</span>
+      <span>HT/LT Cable Laying</span><span class="text-arc">/</span>
+      <span>Transformer Installation</span><span class="text-rebar">/</span>
+      <span>Earthing &amp; LPS</span><span class="text-arc">/</span>
+      <span>LT Panels &amp; MCC</span><span class="text-rebar">/</span>
+      <span>Power Distribution</span><span class="text-arc">/</span>
+      <span>RCC Hume Pipes</span><span class="text-rebar">/</span>
+      <span>Route Markers</span><span class="text-arc">/</span>
+      <span>Trench Covers</span><span class="text-rebar">/</span>
+      <span>Cement Poles</span><span class="text-arc">/</span>
+    </div>
+    <div class="flex items-center gap-12 px-6 text-steel font-display text-lg md:text-2xl tracking-tight" aria-hidden="true">
+      <span>RCC Hume Pipes</span><span class="text-arc">/</span>
+      <span>HT/LT Cable Laying</span><span class="text-rebar">/</span>
+      <span>Substation Erection</span><span class="text-arc">/</span>
+      <span>Trench Covers</span><span class="text-rebar">/</span>
+      <span>Route Markers</span><span class="text-arc">/</span>
+      <span>Earthing Pits</span><span class="text-rebar">/</span>
+      <span>Cement Poles</span><span class="text-arc">/</span>
+      <span>Transformer Installation</span><span class="text-rebar">/</span>
+      <span>Compound Walls</span><span class="text-arc">/</span>
+      <span>Power Distribution</span><span class="text-rebar">/</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about" class="relative py-20 md:py-32 overflow-hidden">
+  <div class="absolute inset-0 bp-grid-small opacity-50"></div>
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+      <div class="lg:col-span-5" data-aos="fade-right">
+        <div class="sec-num mb-4">// 01 · WHO WE ARE</div>
+        <h2 class="font-display font-bold text-white text-3xl md:text-5xl leading-tight tracking-tight">
+          One company.<br/>
+          <span class="grad-cool">Two engineering disciplines.</span>
+        </h2>
+        <p class="mt-6 text-slate-300 leading-relaxed">
+          Headquartered in Pune, PM Vectors operates two specialised divisions under one banner — a <span class="text-white font-semibold">licensed electrical contracting practice</span> that erects substations, lays cable and energises infrastructure, supported by our own <span class="text-white font-semibold">in-house RCC precast manufacturing</span> at Waki, Baramati.
+        </p>
+        <p class="mt-4 text-slate-400 leading-relaxed">
+          From 10 MVA substation erections to IS-458 compliant hume pipes, every job is supervised end-to-end by our own engineering and QA teams. Government bodies, industrial corporates and private contractors across Maharashtra rely on us for honest pricing, on-time delivery and work that survives the audit.
+        </p>
+
+        <div class="mt-8 grid grid-cols-2 gap-4">
+          <div class="rounded-xl border border-rebar/30 p-4 bg-ink-800/30">
+            <div class="text-rebar font-mono text-xs">PRIMARY · DIV 01</div>
+            <div class="text-white font-semibold mt-1">Electrical &amp; Engineering</div>
+            <div class="text-xs text-steel mt-1">Substation · Cabling · Commissioning</div>
+          </div>
+          <div class="rounded-xl border border-white/10 p-4 bg-ink-800/30">
+            <div class="text-arc font-mono text-xs">SUPPORTING · DIV 02</div>
+            <div class="text-white font-semibold mt-1">RCC Precast Plant</div>
+            <div class="text-xs text-steel mt-1">Waki, Baramati · IS 458</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 grid grid-cols-6 gap-3 md:gap-4" data-aos="fade-left">
+        <div class="col-span-4 row-span-2 photo-frame aspect-[4/5]">
+          <img src="assets/photos/transformer-dp-structure.jpg" alt="DTC Substation — Transformer DP Structure by PM Vectors" class="w-full h-full object-cover" />
+          <div class="absolute bottom-4 left-4 right-4 z-10">
+            <div class="text-rebar font-mono text-[10px] tracking-widest">DIVISION 01 · PRIMARY</div>
+            <div class="text-white font-display font-bold text-xl md:text-2xl">Electrical &amp; Engineering</div>
+          </div>
+        </div>
+        <div class="col-span-2 photo-frame aspect-square">
+          <img src="assets/photos/lt-panel-mcc-pcc.jpg" alt="LT Panel · MCC/PCC assembly" class="w-full h-full object-cover" />
+        </div>
+        <div class="col-span-2 photo-frame aspect-square">
+          <img src="assets/photos/half-round-pipes-yard.jpg" alt="RCC manufacturing yard, Waki Plant" class="w-full h-full object-cover" />
+          <div class="absolute bottom-3 left-3 right-3 z-10">
+            <div class="text-arc font-mono text-[9px] tracking-widest">DIVISION 02</div>
+            <div class="text-white font-display font-bold text-sm md:text-base">RCC Precast</div>
+          </div>
+        </div>
+        <div class="col-span-6 photo-frame aspect-[5/2]">
+          <img src="assets/photos/ht-cable-trenching-rcc-pipes.jpg" alt="Infrastructure work — HT cable trenching with RCC pipes" class="w-full h-full object-cover" />
+          <div class="absolute bottom-4 left-4 right-4 z-10 flex items-end justify-between">
+            <div>
+              <div class="text-white font-display font-bold text-lg md:text-2xl">Built to last. Backed by quality.</div>
+              <div class="text-steel text-xs md:text-sm">Trusted by govt, corporate & private contractors</div>
+            </div>
+            <div class="hidden md:block text-rebar font-mono text-xs">EST · 2019</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== DIVISIONS SPLIT ==================== -->
+<section id="divisions" class="relative py-20 md:py-28 bg-gradient-to-b from-ink-950 via-ink-900 to-ink-950 overflow-hidden">
+  <div class="absolute inset-0 bp-grid opacity-40"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+    <div class="text-center mb-14 md:mb-20" data-aos="fade-up">
+      <div class="sec-num mb-3">// 02 · DIVISIONS</div>
+      <h2 class="font-display font-bold text-white text-3xl md:text-5xl lg:text-6xl tracking-tight leading-tight">
+        Two vectors of strength.
+      </h2>
+      <p class="mt-4 text-slate-400 max-w-2xl mx-auto">
+        Pick the division you need — or engage both for a complete infrastructure handover from concrete to circuit.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5 md:gap-6">
+
+      <!-- Division 1: Electrical (PRIMARY) -->
+      <a href="#electrical" class="group relative rounded-3xl overflow-hidden border border-rebar/20 bg-ink-800/40 lift" data-aos="fade-right">
+        <div class="aspect-[4/3] relative">
+          <img src="assets/photos/twin-crane-transformer-operation.jpg" alt="Electrical substation work — twin-crane transformer lift" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/70 to-ink-950/20"></div>
+          <div class="absolute inset-0 bp-grid-small opacity-30"></div>
+        </div>
+        <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-between">
+          <div class="flex items-center justify-between">
+            <div>
+              <div class="flex items-center gap-2">
+                <div class="text-rebar font-mono text-xs tracking-[0.3em]">DIVISION · 01</div>
+                <span class="px-2 py-0.5 rounded-full bg-rebar/15 border border-rebar/30 text-rebar text-[9px] font-bold tracking-widest">PRIMARY</span>
+              </div>
+              <div class="text-rebar font-mono text-[10px] tracking-widest mt-1">POWER · CABLING · COMMISSIONING</div>
+            </div>
+            <div class="w-14 h-14 rounded-full border-2 border-rebar/50 flex items-center justify-center">
+              <svg class="w-6 h-6 text-rebar" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-white text-3xl md:text-5xl tracking-tight leading-tight">Electrical &amp;<br/>Engineering Services</h3>
+            <p class="mt-3 text-slate-300 max-w-md text-sm md:text-base">
+              Substation erection up to 10 MVA, HT/LT cable laying, transformer installation, earthing systems and turnkey power distribution — engineered and commissioned end-to-end.
+            </p>
+            <div class="mt-6 flex items-center gap-2 text-white font-semibold">
+              <span>Explore Services</span>
+              <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-0 inset-x-0 h-1 accent-elec"></div>
+      </a>
+
+      <!-- Division 2: RCC (SUPPORTING) -->
+      <a href="#products" class="group relative rounded-3xl overflow-hidden border border-white/10 bg-ink-800/40 lift" data-aos="fade-left">
+        <div class="aspect-[4/3] relative">
+          <img src="assets/photos/rcc-full-round-hume-pipes.jpg" alt="RCC Full-Round Hume Pipes" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/70 to-ink-950/20"></div>
+          <div class="absolute inset-0 bp-grid-small opacity-30"></div>
+        </div>
+        <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-between">
+          <div class="flex items-center justify-between">
+            <div>
+              <div class="text-concrete font-mono text-xs tracking-[0.3em]">DIVISION · 02</div>
+              <div class="text-concrete font-mono text-[10px] tracking-widest mt-1">CASTING · COMPLIANCE · CONCRETE</div>
+            </div>
+            <div class="w-14 h-14 rounded-full border-2 border-concrete/40 flex items-center justify-center">
+              <svg class="w-6 h-6 text-concrete" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-dasharray="2 3"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-white text-3xl md:text-5xl tracking-tight leading-tight">RCC &amp; Precast<br/>Manufacturing</h3>
+            <p class="mt-3 text-slate-300 max-w-md text-sm md:text-base">
+              IS 458–compliant hume pipes, half-rounds, route markers, trench covers and custom precast products — cast at our Waki, Baramati facility.
+            </p>
+            <div class="mt-6 flex items-center gap-2 text-white font-semibold">
+              <span>Explore Products</span>
+              <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-0 inset-x-0 h-1 accent-rcc"></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== DIVISION 01: ELECTRICAL SERVICES (PRIMARY) ==================== -->
+<section id="electrical" class="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-ink-950 to-ink-900">
+  <div class="absolute inset-0 bp-grid opacity-30"></div>
+  <div class="absolute top-0 left-0 right-0 h-px accent-elec"></div>
+  <div class="absolute -top-20 right-0 w-96 h-96 rounded-full bg-rebar/10 blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-16" data-aos="fade-up">
+      <div>
+        <div class="flex items-center gap-3 mb-4 flex-wrap">
+          <span class="text-rebar font-mono text-xs tracking-[0.3em]">DIVISION 01 · ELECTRICAL &amp; ENGINEERING</span>
+          <span class="px-2 py-0.5 rounded-full bg-rebar/15 border border-rebar/30 text-rebar text-[9px] font-bold tracking-widest">PRIMARY</span>
+          <span class="h-px w-12 bg-rebar/40"></span>
+        </div>
+        <h2 class="font-display font-bold text-white text-3xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
+          From substation<br/>
+          <span class="grad-warm">to switched-on.</span>
+        </h2>
+      </div>
+      <p class="text-slate-400 max-w-lg leading-relaxed">
+        Licensed electrical contracting backed by site supervision, certified workmanship and on-time commissioning. Industrial parks, MIDC plants, government utilities and private developers across Maharashtra.
+      </p>
+    </div>
+
+    <!-- Service grid -->
+    <div class="grid md:grid-cols-12 gap-4 md:gap-5">
+
+      <!-- Substation Erection -->
+      <div class="md:col-span-7 product-card electrical rounded-2xl overflow-hidden group lift" data-aos="fade-up">
+        <div class="aspect-[16/10] relative overflow-hidden">
+          <img src="assets/photos/ht-feeder-pillar-erection.jpg" alt="HT Substation / Feeder Pillar Erection — PM Vectors" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
+          <div class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-ink-950/80 backdrop-blur text-[10px] font-mono text-rebar tracking-widest border border-rebar/30">SIGNATURE WORK</div>
+        </div>
+        <div class="p-5 md:p-7">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-rebar/10 border border-rebar/30 flex items-center justify-center">
+              <svg class="w-5 h-5 text-rebar" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-white text-2xl md:text-3xl">Substation Erection</h3>
+          </div>
+          <p class="text-slate-400 text-sm md:text-base">DTC, AB switch and pole-mounted substation erection up to 10 MVA. Foundation, structure, transformer placement, lightning protection — turnkey commissioning with statutory approvals.</p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-rebar">Up to 10 MVA</span>
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-rebar">DTC / SS / AB</span>
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-rebar">Licensed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transformer Installation -->
+      <div class="md:col-span-5 product-card electrical rounded-2xl overflow-hidden group lift" data-aos="fade-up" data-aos-delay="100">
+        <div class="aspect-[16/10] relative overflow-hidden">
+          <img src="assets/photos/transformer-installation-escorts.jpg" alt="Power Transformer Installation by PM Vectors" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
+        </div>
+        <div class="p-5 md:p-7">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-rebar/10 border border-rebar/30 flex items-center justify-center">
+              <svg class="w-5 h-5 text-rebar" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm12-3c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-white text-xl md:text-2xl">Transformer Handling</h3>
+          </div>
+          <p class="text-slate-400 text-sm">Hydraulic crane mobilisation, precision placement, bushing & accessory fitment for distribution and power transformers up to 5 MVA.</p>
+        </div>
+      </div>
+
+      <!-- Cable Laying -->
+      <div class="md:col-span-4 product-card electrical rounded-2xl overflow-hidden group lift" data-aos="fade-up">
+        <div class="aspect-[4/5] relative overflow-hidden">
+          <img src="assets/photos/ht-cable-laying-with-half-round-pipes.jpg" alt="HT Cable Laying with Half-Round Pipe Conduit" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 px-2.5 py-1 rounded bg-rebar/90 text-ink-950 text-[10px] font-bold tracking-widest">HT / LT</div>
+          <div class="absolute bottom-5 left-5 right-5">
+            <div class="text-white font-display font-bold text-xl md:text-2xl">Cable Laying & Termination</div>
+            <p class="text-slate-300 text-xs md:text-sm mt-1">Underground & overhead. Trenching, RCC route marking, end termination & testing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Earthing & Lightning Protection -->
+      <div class="md:col-span-4 product-card electrical rounded-2xl overflow-hidden group lift" data-aos="fade-up" data-aos-delay="100">
+        <div class="aspect-[4/5] relative overflow-hidden">
+          <img src="assets/photos/earthing-pit-installation.jpg" alt="Earthing Pit Installation with Copper Strip" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 px-2.5 py-1 rounded bg-rebar/90 text-ink-950 text-[10px] font-bold tracking-widest">SAFETY CRITICAL</div>
+          <div class="absolute bottom-5 left-5 right-5">
+            <div class="text-white font-display font-bold text-xl md:text-2xl">Earthing & Lightning Protection</div>
+            <p class="text-slate-300 text-xs md:text-sm mt-1">Chemical earth pits, copper-bonded electrodes, LPS audits and earth-resistance testing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LT Power Distribution -->
+      <div class="md:col-span-4 product-card electrical rounded-2xl overflow-hidden group lift" data-aos="fade-up" data-aos-delay="200">
+        <div class="aspect-[4/5] relative overflow-hidden">
+          <img src="assets/photos/lt-panel-mcc-pcc.jpg" alt="LT Panel MCC/PCC assembly by PM Vectors" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 px-2.5 py-1 rounded bg-rebar/90 text-ink-950 text-[10px] font-bold tracking-widest">INDUSTRIAL</div>
+          <div class="absolute bottom-5 left-5 right-5">
+            <div class="text-white font-display font-bold text-xl md:text-2xl">LT Panels &amp; Distribution</div>
+            <p class="text-slate-300 text-xs md:text-sm mt-1">Main LT panels, MCC, PCC, sub-distribution boards — design, supply &amp; commissioning.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service strip -->
+      <div class="md:col-span-12 mt-2 rounded-2xl border border-white/10 bg-ink-800/40 p-5 md:p-7" data-aos="fade-up">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-7">
+          <div>
+            <div class="text-rebar font-mono text-[10px] tracking-widest">SERVICE 05</div>
+            <div class="text-white font-bold mt-1">Street Lighting</div>
+            <p class="text-steel text-xs mt-1">Pole, fixtures & commissioning</p>
+          </div>
+          <div>
+            <div class="text-rebar font-mono text-[10px] tracking-widest">SERVICE 06</div>
+            <div class="text-white font-bold mt-1">Solar BoS</div>
+            <p class="text-steel text-xs mt-1">Module mounting & DC/AC cabling</p>
+          </div>
+          <div>
+            <div class="text-rebar font-mono text-[10px] tracking-widest">SERVICE 07</div>
+            <div class="text-white font-bold mt-1">DG Sync Panels</div>
+            <p class="text-steel text-xs mt-1">AMF, ATS & changeover systems</p>
+          </div>
+          <div>
+            <div class="text-rebar font-mono text-[10px] tracking-widest">SERVICE 08</div>
+            <div class="text-white font-bold mt-1">AMC & O&M</div>
+            <p class="text-steel text-xs mt-1">Annual maintenance contracts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 md:mt-12 rounded-2xl bg-gradient-to-r from-rebar/15 via-rebar/10 to-transparent border border-rebar/20 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-5" data-aos="fade-up">
+      <div>
+        <div class="text-rebar font-mono text-xs tracking-widest mb-2">ELECTRICAL PROJECT?</div>
+        <div class="text-white font-display text-xl md:text-2xl font-bold">Get a site visit & detailed estimate</div>
+        <p class="text-steel mt-1 text-sm md:text-base">Our engineers visit the site, study the load and deliver a sealed BOQ within 48 hours.</p>
+      </div>
+      <a href="https://wa.me/917770055835?text=Hi%2C%20I%27d%20like%20to%20discuss%20an%20electrical%20project" class="min-tap px-6 py-3 rounded-full bg-rebar text-ink-950 font-bold text-sm hover:bg-yellow-400 transition whitespace-nowrap">Book a Site Visit →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== DIVISION 02: RCC PRODUCTS ==================== -->
+<section id="products" class="relative py-20 md:py-32 overflow-hidden">
+  <div class="absolute inset-0 bp-grid-small opacity-40"></div>
+  <div class="absolute top-0 left-0 right-0 h-px accent-rcc"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-16" data-aos="fade-up">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-concrete font-mono text-xs tracking-[0.3em]">DIVISION 02 · RCC PRECAST</span>
+          <span class="h-px w-12 bg-concrete/40"></span>
+        </div>
+        <h2 class="font-display font-bold text-white text-3xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
+          Cast in Pune.<br/>
+          <span class="grad-steel">Built to outlast.</span>
+        </h2>
+      </div>
+      <p class="text-slate-400 max-w-lg leading-relaxed">
+        Manufactured to IS 458 (2003) in NP2 and NP3 classes, from 100 mm to 900 mm. Custom sizes available for bulk orders. Every batch is supervised by our quality analysts — from raw material to dispatch.
+      </p>
+    </div>
+
+    <!-- Product showcase grid -->
+    <div class="grid md:grid-cols-12 gap-4 md:gap-5">
+
+      <!-- Large feature card – Hume Pipes -->
+      <div class="md:col-span-7 product-card rounded-2xl overflow-hidden group lift" data-aos="fade-up">
+        <div class="aspect-[16/10] relative overflow-hidden">
+          <img src="assets/photos/rcc-full-round-hume-pipes.jpg" alt="RCC Full-Round Hume Pipes at PM Vectors despatch yard" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
+          <div class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-ink-950/80 backdrop-blur text-[10px] font-mono text-concrete tracking-widest border border-white/10">FLAGSHIP · IS 458</div>
+        </div>
+        <div class="p-5 md:p-7">
+          <h3 class="font-display font-bold text-white text-2xl md:text-3xl">RCC Hume Pipes</h3>
+          <p class="text-slate-400 mt-2 text-sm md:text-base">Full-round reinforced cement concrete pipes for stormwater, drainage and culvert applications. Available in NP2 & NP3 strength classes.</p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-concrete">Ø 100–900 mm</span>
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-concrete">NP2 / NP3</span>
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-concrete">Bulk ready</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Half Round Pipes -->
+      <div class="md:col-span-5 product-card rounded-2xl overflow-hidden group lift" data-aos="fade-up" data-aos-delay="100">
+        <div class="aspect-[16/10] relative overflow-hidden">
+          <img src="assets/photos/half-round-pipes-yard.jpg" alt="RCC Half-Round Pipes — Curing Yard at Waki Plant, Baramati" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
+          <div class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-ink-950/80 backdrop-blur text-[10px] font-mono text-concrete tracking-widest border border-white/10">WAKI PLANT · BARAMATI</div>
+        </div>
+        <div class="p-5 md:p-7">
+          <h3 class="font-display font-bold text-white text-xl md:text-2xl">Half-Round Pipes</h3>
+          <p class="text-slate-400 mt-2 text-sm">Surface drainage channels and open-flow gutters for industrial yards, roadside drains and stormwater systems — pictured at our Waki curing yard.</p>
+        </div>
+      </div>
+
+      <!-- Gas Line Route Markers -->
+      <div class="md:col-span-4 product-card rounded-2xl overflow-hidden group lift" data-aos="fade-up">
+        <div class="aspect-square relative overflow-hidden">
+          <img src="assets/photos/mngl-gas-route-markers-yellow.jpg" alt="MNGL Gas Pipeline Route Markers at PM Vectors" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 px-2.5 py-1 rounded-full bg-ink-950/80 backdrop-blur text-[10px] font-mono text-yellow-300 tracking-widest border border-yellow-500/30">MNGL · GAS</div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-display font-bold text-white text-lg md:text-xl">Gas Line Route Markers</h3>
+          <p class="text-slate-400 mt-1 text-sm">Yellow precast markers for MNGL &amp; other gas pipeline networks. Embossed text, weather-resistant.</p>
+        </div>
+      </div>
+
+      <!-- HT Cable Route Markers -->
+      <div class="md:col-span-4 product-card rounded-2xl overflow-hidden group lift" data-aos="fade-up" data-aos-delay="100">
+        <div class="aspect-square relative overflow-hidden">
+          <img src="assets/photos/ht-cable-route-markers.jpg" alt="HT Cable Route Markers at PM Vectors despatch yard" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 px-2.5 py-1 rounded-full bg-ink-950/80 backdrop-blur text-[10px] font-mono text-red-400 tracking-widest border border-red-500/30">HT CABLE</div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-display font-bold text-white text-lg md:text-xl">HT Cable Route Markers</h3>
+          <p class="text-slate-400 mt-1 text-sm">High-tension cable identification posts. Painted red, embossed legend. Field-tested durability.</p>
+        </div>
+      </div>
+
+      <!-- Trench & Drainage Covers -->
+      <div class="md:col-span-4 product-card rounded-2xl overflow-hidden group lift" data-aos="fade-up" data-aos-delay="200">
+        <div class="aspect-square relative overflow-hidden">
+          <img src="assets/photos/rcc-trench-covers-rows.jpg" alt="RCC Trench &amp; Drainage Covers production lot at Waki Plant" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 px-2.5 py-1 rounded-full bg-ink-950/80 backdrop-blur text-[10px] font-mono text-concrete tracking-widest border border-white/10">PRECAST · COVERS</div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-display font-bold text-white text-lg md:text-xl">Trench &amp; Drainage Covers</h3>
+          <p class="text-slate-400 mt-1 text-sm">Heavy-duty precast covers with integrated lifting eyes. Custom sizes for any trench width.</p>
+        </div>
+      </div>
+
+      <!-- Cement Poles -->
+      <div class="md:col-span-3 product-card rounded-2xl overflow-hidden group lift" data-aos="fade-up">
+        <div class="aspect-[3/4] relative overflow-hidden">
+          <img src="assets/photos/cement-poles-yard.jpg" alt="RCC Cement Poles stock at Waki Plant, Baramati" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="font-display font-bold text-white text-lg">Cement Poles</h3>
+            <p class="text-slate-400 text-xs mt-1">Fencing, lighting &amp; support poles</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Earthing Pits -->
+      <div class="md:col-span-3 product-card rounded-2xl overflow-hidden group lift" data-aos="fade-up" data-aos-delay="100">
+        <div class="aspect-[3/4] relative overflow-hidden">
+          <img src="assets/photos/earthing-pit-installation.jpg" alt="RCC Earthing Pit installation with copper strip" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="font-display font-bold text-white text-lg">Earthing Pits</h3>
+            <p class="text-slate-400 text-xs mt-1">Precast electrical earthing pits</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Road Dividers -->
+      <div class="md:col-span-3 product-card rounded-2xl overflow-hidden group lift" data-aos="fade-up" data-aos-delay="200">
+        <div class="aspect-[3/4] relative overflow-hidden">
+          <img src="assets/photos/road-divider-kerb.jpg" alt="RCC Road Dividers &amp; Kerb Stones" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="font-display font-bold text-white text-lg">Road Dividers</h3>
+            <p class="text-slate-400 text-xs mt-1">Kerb stones &amp; median dividers</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RCC Benches / Compound Walls -->
+      <div class="md:col-span-3 product-card rounded-2xl overflow-hidden group lift" data-aos="fade-up" data-aos-delay="300">
+        <div class="aspect-[3/4] relative overflow-hidden">
+          <img src="assets/photos/rcc-compound-wall.jpg" alt="RCC Precast Compound Wall" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="font-display font-bold text-white text-lg">Compound Walls</h3>
+            <p class="text-slate-400 text-xs mt-1">RCC walls, benches &amp; custom precast</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA strip -->
+    <div class="mt-12 md:mt-16 rounded-2xl border border-white/10 bg-ink-800/40 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-5" data-aos="fade-up">
+      <div>
+        <div class="text-concrete font-mono text-xs tracking-widest mb-2">CUSTOM PRECAST</div>
+        <div class="text-white font-display text-xl md:text-2xl font-bold">Need a custom size or shape?</div>
+        <p class="text-steel mt-1 text-sm md:text-base">We cast to spec for bulk orders. Send drawings, get a price within 24 hours.</p>
+      </div>
+      <a href="#contact" class="min-tap px-6 py-3 rounded-full bg-white text-ink-950 font-semibold text-sm hover:bg-rebar transition whitespace-nowrap">Request a Bulk Quote →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== QUALITY PROCESS ==================== -->
+<section class="relative py-20 md:py-28 bg-ink-900 overflow-hidden">
+  <div class="absolute inset-0 bp-grid-small opacity-50"></div>
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+      <div class="lg:col-span-5 lg:sticky lg:top-28" data-aos="fade-right">
+        <div class="sec-num mb-3">// 03 · OUR PROCESS</div>
+        <h2 class="font-display font-bold text-white text-3xl md:text-5xl tracking-tight leading-tight">
+          Quality, supervised<br/>at <span class="grad-cool">every stage.</span>
+        </h2>
+        <p class="mt-5 text-slate-400 leading-relaxed">
+          We don't just inspect the finished product — our in-house QA team verifies every input, every cure cycle and every dispatch. That's how we keep IS 458 compliance, every single time.
+        </p>
+      </div>
+
+      <div class="lg:col-span-7 space-y-4">
+        <div class="rounded-2xl border border-white/10 bg-ink-800/40 p-5 md:p-7 flex gap-5 lift" data-aos="fade-left">
+          <div class="font-impact text-rebar text-5xl md:text-6xl flex-shrink-0">01</div>
+          <div>
+            <div class="text-white font-display font-bold text-lg md:text-xl">Raw Material Inspection</div>
+            <p class="text-slate-400 text-sm md:text-base mt-1">Cement, aggregate and steel are tested at intake. Only batches that meet IS specifications enter our yard.</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-ink-800/40 p-5 md:p-7 flex gap-5 lift" data-aos="fade-left" data-aos-delay="100">
+          <div class="font-impact text-rebar text-5xl md:text-6xl flex-shrink-0">02</div>
+          <div>
+            <div class="text-white font-display font-bold text-lg md:text-xl">Reinforcement & Mould Setup</div>
+            <p class="text-slate-400 text-sm md:text-base mt-1">Steel cages are fabricated to NP2/NP3 spec. Moulds are calibrated for dimensional accuracy before every pour.</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-ink-800/40 p-5 md:p-7 flex gap-5 lift" data-aos="fade-left" data-aos-delay="200">
+          <div class="font-impact text-rebar text-5xl md:text-6xl flex-shrink-0">03</div>
+          <div>
+            <div class="text-white font-display font-bold text-lg md:text-xl">Controlled Casting & Curing</div>
+            <p class="text-slate-400 text-sm md:text-base mt-1">Mix design, vibration, demoulding and curing cycles are monitored to lock in strength and surface finish.</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-ink-800/40 p-5 md:p-7 flex gap-5 lift" data-aos="fade-left" data-aos-delay="300">
+          <div class="font-impact text-rebar text-5xl md:text-6xl flex-shrink-0">04</div>
+          <div>
+            <div class="text-white font-display font-bold text-lg md:text-xl">Final QA & Despatch</div>
+            <p class="text-slate-400 text-sm md:text-base mt-1">Every product is inspected, marked and loaded with care. We deliver across Maharashtra with our trusted logistics partners.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROJECT GALLERY ==================== -->
+<section id="projects" class="relative py-20 md:py-28 overflow-hidden">
+  <div class="absolute inset-0 bp-grid-small opacity-40"></div>
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+
+    <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+      <div class="sec-num mb-3">// 04 · ON-SITE</div>
+      <h2 class="font-display font-bold text-white text-3xl md:text-5xl lg:text-6xl tracking-tight leading-tight">
+        From our yard.<br/><span class="grad-cool">From the field.</span>
+      </h2>
+      <p class="mt-4 text-slate-400 max-w-2xl mx-auto">
+        A look at recent precast despatches and electrical commissioning across Maharashtra.
+      </p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="flex justify-center gap-2 mb-8 md:mb-10 flex-wrap" data-aos="fade-up">
+      <button class="filter-btn active min-tap px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-semibold border border-white/10 bg-white text-ink-950" data-filter="all">All Work</button>
+      <button class="filter-btn min-tap px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-semibold border border-white/10 bg-ink-800 text-white hover:bg-white/10" data-filter="elec">Electrical &amp; Engineering</button>
+      <button class="filter-btn min-tap px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-semibold border border-white/10 bg-ink-800 text-white hover:bg-white/10" data-filter="rcc">RCC &amp; Precast</button>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4" id="gallery">
+      <!-- Electrical first -->
+      <div class="gallery-item elec photo-frame aspect-square" data-aos="zoom-in">
+        <img src="assets/photos/transformer-dp-structure.jpg" alt="DTC Substation — Transformer DP Structure" class="w-full h-full object-cover" />
+        <div class="absolute bottom-3 left-3 right-3 z-10"><span class="text-[10px] font-mono text-rebar tracking-widest">ELEC</span><div class="text-white font-semibold text-sm md:text-base">DTC Substation</div></div>
+      </div>
+      <div class="gallery-item elec photo-frame aspect-square" data-aos="zoom-in" data-aos-delay="50">
+        <img src="assets/photos/twin-crane-transformer-operation.jpg" alt="Twin-Crane Transformer Lift" class="w-full h-full object-cover" />
+        <div class="absolute bottom-3 left-3 right-3 z-10"><span class="text-[10px] font-mono text-rebar tracking-widest">ELEC</span><div class="text-white font-semibold text-sm md:text-base">Transformer Lift</div></div>
+      </div>
+      <div class="gallery-item elec photo-frame aspect-square" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/photos/ht-feeder-pillar-erection.jpg" alt="HT Feeder Pillar / Overhead Distribution" class="w-full h-full object-cover" />
+        <div class="absolute bottom-3 left-3 right-3 z-10"><span class="text-[10px] font-mono text-rebar tracking-widest">ELEC</span><div class="text-white font-semibold text-sm md:text-base">HT Feeder Pillar</div></div>
+      </div>
+      <div class="gallery-item elec photo-frame aspect-square" data-aos="zoom-in" data-aos-delay="150">
+        <img src="assets/photos/ht-cable-trenching-rcc-pipes.jpg" alt="HT Cable Trenching with RCC Pipes" class="w-full h-full object-cover" />
+        <div class="absolute bottom-3 left-3 right-3 z-10"><span class="text-[10px] font-mono text-rebar tracking-widest">ELEC</span><div class="text-white font-semibold text-sm md:text-base">HT Cable Trench</div></div>
+      </div>
+      <!-- RCC after -->
+      <div class="gallery-item rcc photo-frame aspect-square" data-aos="zoom-in">
+        <img src="assets/photos/rcc-full-round-hume-pipes.jpg" alt="RCC Full-Round Hume Pipes" class="w-full h-full object-cover" />
+        <div class="absolute bottom-3 left-3 right-3 z-10"><span class="text-[10px] font-mono text-concrete tracking-widest">RCC</span><div class="text-white font-semibold text-sm md:text-base">Full-Round Hume Pipes</div></div>
+      </div>
+      <div class="gallery-item rcc photo-frame aspect-square" data-aos="zoom-in" data-aos-delay="50">
+        <img src="assets/photos/half-round-pipes-yard.jpg" alt="Curing Yard, Baramati" class="w-full h-full object-cover" />
+        <div class="absolute bottom-3 left-3 right-3 z-10"><span class="text-[10px] font-mono text-concrete tracking-widest">RCC</span><div class="text-white font-semibold text-sm md:text-base">Curing Yard, Baramati</div></div>
+      </div>
+      <div class="gallery-item rcc photo-frame aspect-square" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/photos/mngl-gas-route-markers-yellow.jpg" alt="MNGL Gas Pipeline Route Markers" class="w-full h-full object-cover" />
+        <div class="absolute bottom-3 left-3 right-3 z-10"><span class="text-[10px] font-mono text-concrete tracking-widest">RCC</span><div class="text-white font-semibold text-sm md:text-base">MNGL Route Markers</div></div>
+      </div>
+      <div class="gallery-item rcc photo-frame aspect-square" data-aos="zoom-in" data-aos-delay="150">
+        <img src="assets/photos/half-round-pipes-despatch.jpg" alt="RCC Half-Round Pipes" class="w-full h-full object-cover" />
+        <div class="absolute bottom-3 left-3 right-3 z-10"><span class="text-[10px] font-mono text-concrete tracking-widest">RCC</span><div class="text-white font-semibold text-sm md:text-base">Half-Round Pipes</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY US ==================== -->
+<section class="relative py-20 md:py-28 bg-ink-900 overflow-hidden">
+  <div class="absolute inset-0 bp-grid opacity-30"></div>
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+
+    <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+      <div class="sec-num mb-3">// 05 · WHY PM VECTORS</div>
+      <h2 class="font-display font-bold text-white text-3xl md:text-5xl lg:text-6xl tracking-tight leading-tight">
+        The boring stuff<br/><span class="grad-cool">we obsess over.</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+      <div class="rounded-2xl border border-rebar/30 bg-ink-800/40 p-6 md:p-7 lift" data-aos="fade-up">
+        <div class="w-12 h-12 rounded-xl bg-rebar/10 border border-rebar/30 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-rebar" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-white text-xl">Licensed Electrical Contractor</h3>
+        <p class="text-slate-400 mt-2 text-sm md:text-base">Statutory-compliant erection work up to 10 MVA. Substations, transformers, HT/LT systems — fully insured and approval-ready.</p>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-ink-800/40 p-6 md:p-7 lift" data-aos="fade-up" data-aos-delay="50">
+        <div class="w-12 h-12 rounded-xl bg-rebar/10 border border-rebar/30 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-rebar" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-white text-xl">7+ Years On-Site</h3>
+        <p class="text-slate-400 mt-2 text-sm md:text-base">Battle-tested across 450+ projects with government, corporate and private contractors throughout Maharashtra.</p>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-ink-800/40 p-6 md:p-7 lift" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-12 h-12 rounded-xl bg-arc/10 border border-arc/30 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-arc" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-white text-xl">In-House Precast Plant</h3>
+        <p class="text-slate-400 mt-2 text-sm md:text-base">Our own RCC manufacturing at Waki, Baramati — route markers, trench covers, cable & gas markers cast to your spec.</p>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-ink-800/40 p-6 md:p-7 lift" data-aos="fade-up">
+        <div class="w-12 h-12 rounded-xl bg-arc/10 border border-arc/30 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-arc" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-white text-xl">IS 458 Compliance</h3>
+        <p class="text-slate-400 mt-2 text-sm md:text-base">Every precast item meets Indian Standard 458 (2003) in NP2 and NP3 strength classes. No exceptions.</p>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-ink-800/40 p-6 md:p-7 lift" data-aos="fade-up" data-aos-delay="50">
+        <div class="w-12 h-12 rounded-xl bg-arc/10 border border-arc/30 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-arc" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h2m9-2h6m-6 0a2 2 0 100 4 2 2 0 000-4zm-6 0a2 2 0 100 4 2 2 0 000-4z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-white text-xl">In-House Logistics</h3>
+        <p class="text-slate-400 mt-2 text-sm md:text-base">Delivered across Maharashtra with verified transport partners. Bulk orders despatched on schedule.</p>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-ink-800/40 p-6 md:p-7 lift" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-12 h-12 rounded-xl bg-rebar/10 border border-rebar/30 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-rebar" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-white text-xl">Honest Pricing</h3>
+        <p class="text-slate-400 mt-2 text-sm md:text-base">Transparent BOQs, no hidden costs. Competitive rates on volume — and detailed quotes within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CLIENTS / TRUST ==================== -->
+<section class="relative py-16 md:py-20 overflow-hidden">
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <div class="sec-num mb-3">// 06 · TRUSTED BY</div>
+      <h2 class="font-display font-bold text-white text-2xl md:text-4xl tracking-tight">
+        Built for projects that <span class="grad-warm">cannot afford to fail.</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
+      <div class="rounded-xl border border-white/10 bg-ink-800/30 p-5 md:p-7 text-center">
+        <div class="text-rebar font-mono text-[10px] tracking-widest">SECTOR</div>
+        <div class="font-display font-bold text-white text-lg md:text-xl mt-1">Government</div>
+        <div class="text-steel text-xs mt-1">Utilities · Municipal · PWD</div>
+      </div>
+      <div class="rounded-xl border border-white/10 bg-ink-800/30 p-5 md:p-7 text-center">
+        <div class="text-arc font-mono text-[10px] tracking-widest">SECTOR</div>
+        <div class="font-display font-bold text-white text-lg md:text-xl mt-1">Industrial</div>
+        <div class="text-steel text-xs mt-1">MIDC · OEM plants</div>
+      </div>
+      <div class="rounded-xl border border-white/10 bg-ink-800/30 p-5 md:p-7 text-center">
+        <div class="text-rebar font-mono text-[10px] tracking-widest">SECTOR</div>
+        <div class="font-display font-bold text-white text-lg md:text-xl mt-1">Infrastructure</div>
+        <div class="text-steel text-xs mt-1">Roads · Pipelines · Telecom</div>
+      </div>
+      <div class="rounded-xl border border-white/10 bg-ink-800/30 p-5 md:p-7 text-center">
+        <div class="text-arc font-mono text-[10px] tracking-widest">SECTOR</div>
+        <div class="font-display font-bold text-white text-lg md:text-xl mt-1">Private</div>
+        <div class="text-steel text-xs mt-1">Developers · Contractors</div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mt-12 md:mt-16 grid md:grid-cols-3 gap-4 md:gap-5">
+      <blockquote class="rounded-2xl border border-white/10 bg-ink-800/40 p-6 md:p-7 lift" data-aos="fade-up">
+        <svg class="w-7 h-7 text-rebar mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M9.583 17.321C8.553 16.227 8 15 8 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C18.553 16.227 18 15 18 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+        <p class="text-slate-200 leading-relaxed">"PM Vectors supplied our entire culvert package for a road project across three talukas. Quality was consistent, despatch was on schedule, and their team handled every paperwork hassle."</p>
+        <div class="mt-5 pt-5 border-t border-white/10">
+          <div class="text-white font-semibold">S. Patil</div>
+          <div class="text-steel text-xs">Senior Engineer · Road Construction, Pune Dist.</div>
+        </div>
+      </blockquote>
+
+      <blockquote class="rounded-2xl border border-white/10 bg-ink-800/40 p-6 md:p-7 lift" data-aos="fade-up" data-aos-delay="100">
+        <svg class="w-7 h-7 text-rebar mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M9.583 17.321C8.553 16.227 8 15 8 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C18.553 16.227 18 15 18 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+        <p class="text-slate-200 leading-relaxed">"We hired PM Vectors for a DTC substation at our Chakan plant. The site team understood the load study, completed erection in 18 days, and the discom approval came through clean."</p>
+        <div class="mt-5 pt-5 border-t border-white/10">
+          <div class="text-white font-semibold">R. Deshmukh</div>
+          <div class="text-steel text-xs">Plant Maintenance Head · MIDC Chakan</div>
+        </div>
+      </blockquote>
+
+      <blockquote class="rounded-2xl border border-white/10 bg-ink-800/40 p-6 md:p-7 lift" data-aos="fade-up" data-aos-delay="200">
+        <svg class="w-7 h-7 text-rebar mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M9.583 17.321C8.553 16.227 8 15 8 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C18.553 16.227 18 15 18 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+        <p class="text-slate-200 leading-relaxed">"Custom-stencilled HT cable markers, on time, in three colours. Their factory understood our utility's specification down to the embossing depth. Repeat orders since 2022."</p>
+        <div class="mt-5 pt-5 border-t border-white/10">
+          <div class="text-white font-semibold">A. Joshi</div>
+          <div class="text-steel text-xs">Procurement Lead · Gas Distribution Network</div>
+        </div>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section id="contact" class="relative py-20 md:py-32 bg-ink-900 overflow-hidden">
+  <div class="absolute inset-0 bp-grid opacity-30"></div>
+  <div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-arc/10 blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-rebar/10 blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-12">
+
+      <!-- Left: info -->
+      <div class="lg:col-span-5" data-aos="fade-right">
+        <div class="sec-num mb-3">// 07 · REACH OUT</div>
+        <h2 class="font-display font-bold text-white text-3xl md:text-5xl tracking-tight leading-tight">
+          Let's build<br/><span class="grad-warm">something solid.</span>
+        </h2>
+        <p class="mt-5 text-slate-300 leading-relaxed">
+          Whether you need a truckload of hume pipes or a turnkey substation, tell us about the project. We respond within one working day.
+        </p>
+
+        <!-- Contact cards -->
+        <div class="mt-8 space-y-3">
+          <a href="tel:+917770055835" class="flex items-center gap-4 p-4 rounded-2xl border border-white/10 bg-ink-800/40 hover:bg-ink-800/70 hover:border-arc/30 transition group">
+            <div class="w-12 h-12 rounded-xl bg-arc/10 border border-arc/30 flex items-center justify-center group-hover:bg-arc/20 transition">
+              <svg class="w-5 h-5 text-arc" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.4a1 1 0 01.96.72l1.2 4a1 1 0 01-.27 1l-1.65 1.5a13 13 0 006.13 6.13l1.5-1.65a1 1 0 011-.27l4 1.2a1 1 0 01.72.96V19a2 2 0 01-2 2A18 18 0 013 5z"/></svg>
+            </div>
+            <div>
+              <div class="text-steel text-xs">Call us</div>
+              <div class="text-white font-bold text-lg">+91 77700 55835</div>
+            </div>
+          </a>
+          <a href="https://wa.me/917770055835?text=Hi%20PM%20Vectors%2C%20I%27d%20like%20a%20quote" class="flex items-center gap-4 p-4 rounded-2xl border border-white/10 bg-ink-800/40 hover:bg-ink-800/70 hover:border-emerald-500/30 transition group">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center group-hover:bg-emerald-500/20 transition">
+              <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.74.46 3.41 1.32 4.9L2 22l5.31-1.39a9.9 9.9 0 004.73 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0012.04 2z"/></svg>
+            </div>
+            <div>
+              <div class="text-steel text-xs">WhatsApp</div>
+              <div class="text-white font-bold text-lg">+91 77700 55835</div>
+            </div>
+          </a>
+          <a href="mailto:contact@pmvectors.com" class="flex items-center gap-4 p-4 rounded-2xl border border-white/10 bg-ink-800/40 hover:bg-ink-800/70 hover:border-rebar/30 transition group">
+            <div class="w-12 h-12 rounded-xl bg-rebar/10 border border-rebar/30 flex items-center justify-center group-hover:bg-rebar/20 transition">
+              <svg class="w-5 h-5 text-rebar" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <div class="text-steel text-xs">Email</div>
+              <div class="text-white font-bold text-base md:text-lg break-all">contact@pmvectors.com</div>
+            </div>
+          </a>
+          <div class="flex items-start gap-4 p-4 rounded-2xl border border-white/10 bg-ink-800/40">
+            <div class="w-12 h-12 rounded-xl bg-arc/10 border border-arc/30 flex items-center justify-center">
+              <svg class="w-5 h-5 text-arc" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0L6.343 16.657a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <div class="text-steel text-xs">Manufacturing</div>
+              <div class="text-white font-bold text-base">Waki, Baramati</div>
+              <div class="text-steel text-xs mt-1">Pune District · Maharashtra · India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="lg:col-span-7" data-aos="fade-left">
+        <div class="rounded-3xl border border-white/10 bg-ink-800/60 p-6 md:p-10 backdrop-blur-sm">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-rebar font-mono text-xs tracking-widest">// REQUEST A QUOTE</span>
+            <span class="h-px flex-1 bg-white/10"></span>
+          </div>
+          <h3 class="font-display font-bold text-white text-2xl md:text-3xl">Tell us what you need.</h3>
+          <p class="text-steel text-sm mt-2">We respond within one working day with a sealed estimate.</p>
+
+          <form id="quote-form" class="mt-7 space-y-4">
+            <!-- Web3Forms key -->
+            <input type="hidden" name="access_key" value="641df74e-0e98-4267-9c42-7847a0c52725" />
+            <input type="hidden" name="subject" value="New Quote Request from PM Vectors website" />
+            <input type="hidden" name="from_name" value="PM Vectors Website" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs text-steel mb-1.5 font-mono tracking-wider">FULL NAME *</label>
+                <input type="text" name="name" required placeholder="Your name" class="field w-full px-4 py-3 rounded-xl text-sm" />
+              </div>
+              <div>
+                <label class="block text-xs text-steel mb-1.5 font-mono tracking-wider">PHONE *</label>
+                <input type="tel" name="phone" required placeholder="+91 ..." class="field w-full px-4 py-3 rounded-xl text-sm" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs text-steel mb-1.5 font-mono tracking-wider">EMAIL</label>
+              <input type="email" name="email" placeholder="you@company.com" class="field w-full px-4 py-3 rounded-xl text-sm" />
+            </div>
+
+            <div>
+              <label class="block text-xs text-steel mb-1.5 font-mono tracking-wider">INTEREST *</label>
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                <label class="cursor-pointer">
+                  <input type="radio" name="interest" value="Electrical Services" class="peer sr-only" required />
+                  <div class="text-center px-3 py-3 rounded-xl border border-white/10 bg-ink-700/40 text-xs md:text-sm font-semibold text-steel peer-checked:border-rebar peer-checked:bg-rebar/10 peer-checked:text-white transition">Electrical Services</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="radio" name="interest" value="RCC &amp; Precast" class="peer sr-only" />
+                  <div class="text-center px-3 py-3 rounded-xl border border-white/10 bg-ink-700/40 text-xs md:text-sm font-semibold text-steel peer-checked:border-arc peer-checked:bg-arc/10 peer-checked:text-white transition">RCC &amp; Precast</div>
+                </label>
+                <label class="cursor-pointer col-span-2 md:col-span-1">
+                  <input type="radio" name="interest" value="Both / General" class="peer sr-only" />
+                  <div class="text-center px-3 py-3 rounded-xl border border-white/10 bg-ink-700/40 text-xs md:text-sm font-semibold text-steel peer-checked:border-emerald-500 peer-checked:bg-emerald-500/10 peer-checked:text-white transition">Both / General</div>
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs text-steel mb-1.5 font-mono tracking-wider">PROJECT DETAILS *</label>
+              <textarea name="message" required rows="4" placeholder="Tell us about your project — quantities, sizes, location, timeline..." class="field w-full px-4 py-3 rounded-xl text-sm resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="min-tap w-full py-4 rounded-xl bg-white text-ink-950 font-bold text-base hover:bg-rebar transition flex items-center justify-center gap-2 shadow-xl">
+              <span id="submit-text">Send Request</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </button>
+            <div id="form-msg" class="hidden text-center py-3 rounded-xl bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 text-sm">
+              ✓ Thank you! We'll get back to you within one working day.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="relative bg-ink-950 border-t border-white/5 pt-14 pb-8 overflow-hidden">
+  <div class="absolute inset-0 bp-grid-small opacity-30"></div>
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8">
+
+    <div class="grid md:grid-cols-12 gap-8 md:gap-10 pb-10 border-b border-white/10">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-3">
+          <div class="w-14 h-14 rounded-xl bg-white p-2 flex items-center justify-center overflow-hidden">
+            <img src="assets/logo/pm-vectors-logo.jpg" alt="PM Vectors" class="w-full h-full object-contain" />
+          </div>
+          <div>
+            <div class="font-display font-bold text-white text-xl tracking-tight">PM VECTORS</div>
+            <div class="text-[10px] text-steel font-mono tracking-[0.2em]">PUNE · MAHARASHTRA</div>
+          </div>
+        </div>
+        <p class="text-slate-400 mt-5 text-sm leading-relaxed max-w-md">
+          Pune-based licensed electrical contractor for substation erection, HT/LT cable laying and engineering services up to 10 MVA — backed by our own IS 458–compliant RCC precast manufacturing. Trusted by government, corporate and private contractors since 2019.
+        </p>
+        <div class="mt-5 flex items-center gap-2">
+          <a href="tel:+917770055835" class="px-3 py-2 rounded-lg border border-white/10 hover:border-arc/50 text-xs text-white transition">Call</a>
+          <a href="https://wa.me/917770055835" class="px-3 py-2 rounded-lg border border-white/10 hover:border-emerald-500/50 text-xs text-white transition">WhatsApp</a>
+          <a href="mailto:contact@pmvectors.com" class="px-3 py-2 rounded-lg border border-white/10 hover:border-rebar/50 text-xs text-white transition">Email</a>
+        </div>
+      </div>
+
+      <div class="md:col-span-3">
+        <div class="text-rebar font-mono text-xs tracking-widest mb-4">DIVISION 01 — ELECTRICAL</div>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li><a href="#electrical" class="hover:text-white transition">Substation Erection</a></li>
+          <li><a href="#electrical" class="hover:text-white transition">HT/LT Cable Laying</a></li>
+          <li><a href="#electrical" class="hover:text-white transition">Transformer Installation</a></li>
+          <li><a href="#electrical" class="hover:text-white transition">Earthing &amp; LPS</a></li>
+          <li><a href="#electrical" class="hover:text-white transition">LT Panels &amp; MCC</a></li>
+          <li><a href="#electrical" class="hover:text-white transition">AMC &amp; O&amp;M</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-2">
+        <div class="text-concrete font-mono text-xs tracking-widest mb-4">DIVISION 02 — RCC</div>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li><a href="#products" class="hover:text-white transition">RCC Hume Pipes</a></li>
+          <li><a href="#products" class="hover:text-white transition">Half-Round Pipes</a></li>
+          <li><a href="#products" class="hover:text-white transition">Route Markers</a></li>
+          <li><a href="#products" class="hover:text-white transition">Trench Covers</a></li>
+          <li><a href="#products" class="hover:text-white transition">Cement Poles</a></li>
+          <li><a href="#products" class="hover:text-white transition">Compound Walls</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-2">
+        <div class="text-emerald-400 font-mono text-xs tracking-widest mb-4">COMPANY</div>
+        <ul class="space-y-2.5 text-sm text-slate-400">
+          <li><a href="#about" class="hover:text-white transition">About</a></li>
+          <li><a href="#divisions" class="hover:text-white transition">Divisions</a></li>
+          <li><a href="#projects" class="hover:text-white transition">Projects</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          <li><a href="https://wa.me/917770055835" class="hover:text-white transition">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-6 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs text-steel">
+      <div>© 2026 PM Vectors. All rights reserved. | Website by <a href="#" class="text-arc hover:text-white transition">BytePhase Web Services</a></div>
+      <div class="font-mono">contact@pmvectors.com · +91 77700 55835</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== FLOATING WHATSAPP WIDGET ==================== -->
+<div class="fixed bottom-24 right-4 md:bottom-6 md:right-6 z-40">
+  <div id="wa-chat" class="wa-widget-chat absolute bottom-16 right-0 w-72 rounded-2xl shadow-2xl bg-white overflow-hidden">
+    <div class="bg-emerald-600 p-4 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+        <span class="font-display font-bold text-emerald-700">PM</span>
+      </div>
+      <div>
+        <div class="text-white font-semibold text-sm">PM Vectors</div>
+        <div class="text-emerald-100 text-xs flex items-center gap-1.5">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-300"></span>
+          Typically replies in minutes
+        </div>
+      </div>
+    </div>
+    <div class="p-4 bg-slate-50">
+      <div class="bg-white rounded-2xl rounded-tl-sm p-3 text-sm text-slate-700 shadow-sm">
+        Hi! 👋 Want a quote on RCC products or electrical work? Send us a message and we'll respond right away.
+      </div>
+      <a href="https://wa.me/917770055835?text=Hi%20PM%20Vectors%2C%20I%27d%20like%20a%20quote%20for%20" class="mt-3 w-full block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl text-sm transition">Start Chat on WhatsApp</a>
+    </div>
+  </div>
+  <button id="wa-toggle" aria-label="WhatsApp" class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-2xl flex items-center justify-center relative breath transition">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.74.46 3.41 1.32 4.9L2 22l5.31-1.39a9.9 9.9 0 004.73 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0012.04 2zm0 1.65c2.21 0 4.29.86 5.85 2.42a8.21 8.21 0 012.42 5.84c0 4.55-3.71 8.26-8.27 8.26a8.23 8.23 0 01-4.21-1.15l-.3-.18-3.13.82.83-3.06-.2-.31a8.18 8.18 0 01-1.27-4.38c.01-4.55 3.72-8.26 8.28-8.26zm-4.71 4.45c-.16 0-.42.06-.64.31-.22.24-.85.83-.85 2.03 0 1.2.87 2.36.99 2.52.12.16 1.7 2.7 4.21 3.68 2.09.81 2.52.65 2.97.61.45-.04 1.46-.6 1.66-1.17.21-.58.21-1.07.15-1.17-.06-.1-.22-.16-.46-.28-.24-.12-1.46-.72-1.69-.8-.22-.08-.39-.12-.55.12-.16.24-.62.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.04-.38-1.97-1.22-.73-.65-1.22-1.45-1.36-1.69-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.75-1.81-.18-.46-.39-.4-.55-.41-.14 0-.3-.02-.46-.02z"/></svg>
+  </button>
+</div>
+
+<!-- ==================== MOBILE STICKY BOTTOM BAR ==================== -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-ink-950/95 backdrop-blur-lg border-t border-white/10">
+  <div class="grid grid-cols-3 gap-0">
+    <a href="tel:+917770055835" class="min-tap flex flex-col items-center justify-center py-3 text-arc hover:bg-white/5 border-r border-white/10">
+      <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.4a1 1 0 01.96.72l1.2 4a1 1 0 01-.27 1l-1.65 1.5a13 13 0 006.13 6.13l1.5-1.65a1 1 0 011-.27l4 1.2a1 1 0 01.72.96V19a2 2 0 01-2 2A18 18 0 013 5z"/></svg>
+      <span class="text-xs font-semibold">Call</span>
+    </a>
+    <a href="https://wa.me/917770055835?text=Hi%20PM%20Vectors" class="min-tap flex flex-col items-center justify-center py-3 text-emerald-400 hover:bg-white/5 border-r border-white/10">
+      <svg class="w-5 h-5 mb-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.74.46 3.41 1.32 4.9L2 22l5.31-1.39a9.9 9.9 0 004.73 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0012.04 2z"/></svg>
+      <span class="text-xs font-semibold">WhatsApp</span>
+    </a>
+    <a href="#contact" class="min-tap flex flex-col items-center justify-center py-3 text-rebar hover:bg-white/5">
+      <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6M5 8h14M5 8a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2v-8a2 2 0 00-2-2M5 8V6a2 2 0 012-2h10a2 2 0 012 2v2"/></svg>
+      <span class="text-xs font-semibold">Enquire</span>
+    </a>
+  </div>
+</div>
+
+<!-- ==================== JSON-LD ==================== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"PM Vectors",
+  "image":"https://bytephase-admin-prod.s3.ap-south-1.amazonaws.com/bytesites/logos/1780686829_1001185751.jpg.jpg",
+  "url":"https://pmvectors.com",
+  "telephone":"+917770055835",
+  "email":"contact@pmvectors.com",
+  "description":"Pune-based licensed electrical contractor for substation erection, HT/LT cable laying, transformer installation and engineering services up to 10 MVA — supported by in-house RCC precast manufacturing (IS 458 compliant).",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Pune",
+    "addressRegion":"Maharashtra",
+    "addressCountry":"IN"
+  },
+  "areaServed":"Maharashtra, India",
+  "priceRange":"₹₹",
+  "foundingDate":"2019",
+  "department":[
+    {
+      "@type":"LocalBusiness",
+      "name":"PM Vectors — Electrical & Engineering Division (Primary)",
+      "description":"Licensed electrical contractor offering substation erection up to 10 MVA, transformer installation, HT/LT cable laying, earthing systems, LT panels, street lighting and turnkey power distribution across Maharashtra."
+    },
+    {
+      "@type":"LocalBusiness",
+      "name":"PM Vectors — RCC & Precast Manufacturing Division",
+      "description":"In-house manufacturer of RCC hume pipes, half-round pipes, route markers, trench covers, cement poles, road dividers, kerb stones and custom precast products. IS 458 (2003) compliant in NP2 and NP3 classes, 100mm to 900mm range."
+    }
+  ]
+}
+</script>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  // AOS
+  AOS.init({ duration: 800, once: true, offset: 80, easing: 'ease-out-cubic' });
+
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  // Nav shadow on scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) nav.classList.add('shadow-2xl');
+    else nav.classList.remove('shadow-2xl');
+  });
+
+  // Counters
+  const counters = document.querySelectorAll('.counter');
+  const startCounters = () => {
+    counters.forEach(c => {
+      const target = +c.dataset.target;
+      const duration = 1600;
+      const start = performance.now();
+      const tick = (t) => {
+        const p = Math.min((t - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        c.textContent = Math.floor(eased * target);
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  };
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { startCounters(); obs.disconnect(); }
+    });
+  }, { threshold: 0.4 });
+  if (counters.length) obs.observe(counters[0]);
+
+  // Gallery filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('active','bg-white','text-ink-950');
+        b.classList.add('bg-ink-800','text-white');
+      });
+      btn.classList.add('active','bg-white','text-ink-950');
+      btn.classList.remove('bg-ink-800','text-white');
+      const f = btn.dataset.filter;
+      galleryItems.forEach(item => {
+        if (f === 'all' || item.classList.contains(f)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // WhatsApp widget toggle
+  const waToggle = document.getElementById('wa-toggle');
+  const waChat = document.getElementById('wa-chat');
+  waToggle.addEventListener('click', () => waChat.classList.toggle('open'));
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('#wa-toggle') && !e.target.closest('#wa-chat')) {
+      waChat.classList.remove('open');
+    }
+  });
+
+  // Quote form
+  const form = document.getElementById('quote-form');
+  const formMsg = document.getElementById('form-msg');
+  const submitText = document.getElementById('submit-text');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    submitText.textContent = 'Sending...';
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method:'POST',
+        headers:{ 'Content-Type':'application/json', 'Accept':'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+      });
+      const data = await res.json();
+      if (data.success) {
+        form.reset();
+        formMsg.classList.remove('hidden');
+        submitText.textContent = 'Send Request';
+        setTimeout(() => formMsg.classList.add('hidden'), 6000);
+      } else {
+        submitText.textContent = 'Try again';
+      }
+    } catch (err) {
+      submitText.textContent = 'Try again';
+    }
+  });
+</script>
+
+</body>
+</html>
