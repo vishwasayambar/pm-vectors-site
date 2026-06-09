@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# AI crawlers — permitted, llms.txt provides structured content
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://pmvectors.com/sitemap.xml
